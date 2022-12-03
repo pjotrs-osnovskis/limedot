@@ -154,7 +154,8 @@ p{
     overflow: visible;
     min-height: 630px;
     margin-top: -130px;
-    padding-top: 130px;
+    padding-top: 128px;
+    padding-bottom: 130px;
 }
 
 #index-1 h1,
@@ -166,7 +167,7 @@ p{
 #index-1 h1{
     font: normal normal bold 64px/70px Work Sans;
     letter-spacing: 0px;
-    margin-top: 110px;
+    margin-top: 28px;
 }
 
 #index-1 p{
@@ -188,6 +189,7 @@ p{
     align-items : center;
     background: #FCFCFC 0% 0% no-repeat padding-box;
     position: relative;
+    z-index: -1;
 }
 
 #index-2 h3,
@@ -448,7 +450,13 @@ p{
 
     #index-1{
         text-align: center;
+        padding: 3rem 0;
     }
+
+    #index-1 h1{
+        margin-top: 110px;
+    }
+    
 
     table.responsive-table,
     table.responsive-table thead,
