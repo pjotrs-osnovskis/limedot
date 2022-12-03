@@ -17,14 +17,27 @@
     <!-- CUSTOM ASSETS -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <script src="assets/js/scripts.js"></script>
+
     <title>limedot</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark custom__no-background">
+    <nav class="navbar navbar-expand-md navbar-dark custom__no-background">
         <div class="container-lg">
             <img class="logo" src="assets/img/limedot_logo.svg" alt="">
             <a class="navbar-brand" href="index.html"></a>
+            <div class="dropdown d-md-none ms-auto">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    EN
+                </a>
+                <ul class="dropdown-menu lang-menu">
+                    <li><a class="dropdown-item custom__active" href="#">EN</a></li>
+                    <li><a class="dropdown-item" href="#">ES</a></li>
+                    <li><a class="dropdown-item" href="#">DE</a></li>
+                </ul>
+            </div>
+
             <button class="navbar-toggler custom__toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -35,22 +48,27 @@
                     <li class="nav-item custom__nav-item">
                         <a class="nav-link custom__active" href="#">About</a>
                     </li>
+                    <div class="custom__divider"></div>
                     <li class="nav-item custom__nav-item">
                         <a class="nav-link" href="#">How it works</a>
                     </li>
+                    <div class="custom__divider"></div>
                     <li class="nav-item custom__nav-item">
                         <a class="nav-link" href="#">Blog</a>
                     </li>
+                    <div class="custom__divider"></div>
                     <li class="nav-item custom__nav-item">
                         <a class="nav-link" href="#">Security and risks</a>
                     </li>
+                    <div class="custom__divider"></div>
                     <li class="nav-item custom__nav-item">
                         <a class="nav-link" href="#">Statistics</a>
                     </li>
+                    <div class="custom__divider"></div>
                     <li class="nav-item">
                         <a class="btn login-button" href="#">Login</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown d-none d-md-block">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             EN
@@ -66,10 +84,10 @@
         </div>
     </nav>
 
-    <section id="index-1" class="overflowing_background">
+    <section id="index-1" class="py-4 py-lg-5 overflowing_background">
         <div class="container-lg">
             <div class="row">
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-md-6 mt-0 mt-sm-5">
                     <h1>
                         Take control and start investing
                     </h1>
@@ -82,7 +100,7 @@
         </div>
     </section>
 
-    <section id="index-2">
+    <section id="index-2" class="py-4 py-lg-5">
         <div class="container-lg ">
             <div class="row ">
                 <div class="col-12 col-md-6 custom__middle">
@@ -100,9 +118,9 @@
         </div>
     </section>
 
-    <section id="index-3">
+    <section id="index-3" class="py-4 py-lg-5">
         <div class="container-lg">
-            <div class="mb-5">
+            <div class="mb-3 mb-lg-4">
                 <h3 class="custom__header">Platform's offer</h3>
             </div>
             <table aria-colcount="4" class="table table-hover responsive-table">
@@ -206,9 +224,9 @@
         </div>
     </section>
 
-    <section id="index-4" class="py-lg-5">
+    <section id="index-4" class="py-4 py-lg-5">
         <div class="container-lg py-lg-5">
-            <div class="mb-5">
+            <div class="mb-3 mb-lg-4">
                 <h3 class="custom__header">Our key features</h3>
             </div>
             <div class="row gx-lg-3 px-lg-5 custom__middle">
@@ -243,7 +261,7 @@
         </div>
     </section>
 
-    <section id="index-5">
+    <section id="index-5" class="py-4 py-lg-5">
         <div class="container-lg">
             <div class="row">
                 <div class="col-12 col-lg-4 ">
@@ -308,9 +326,9 @@
         </div>
     </section>
 
-    <section id="index-6">
+    <section id="index-6" class="py-4 py-lg-5">
         <div class="container-lg">
-            <div class="mb-5">
+            <div class="mb-3 mb-lg-4">
                 <h3 class="custom__header">Questions about investing</h3>
             </div>
             <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -387,7 +405,7 @@
         </div>
     </section>
 
-    <section id="index-7">
+    <section id="index-7" class="py-4 py-lg-5">
         <div class="container-lg">
             <div class="row">
                 <div class="col-md-6 d-none d-md-block"></div>
@@ -404,9 +422,9 @@
         </div>
     </section>
 
-    <section id="index-8">
+    <section id="index-8" class="py-4 py-lg-5">
         <div class="container-lg">
-            <div class="mb-5">
+            <div class="mb-3 mb-lg-4">
                 <h3 class="custom__header">How To Start</h3>
             </div>
             <div class="row justify-content-center">

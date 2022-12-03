@@ -13,11 +13,6 @@ body{
     overflow-x: hidden;
 }
 
-.container,
-.container-lg{
-    padding-left: 10%;
-    padding-right: 10%;
-}
 
 a{
     text-decoration: none;
@@ -77,10 +72,6 @@ p{
     z-index: 2;
 }
 
-.custom__no-background{
-    background-color: transparent;
-}
-
 .custom__verical-line{
     position: relative;
     padding-left: 50px;
@@ -107,9 +98,8 @@ p{
 }
 
 .nav-item a:hover{
-    color: var(--text-color-dark-bg);
+    color: var(--main-lime-color);
 }
-
 
 .login-button{
     border: 1px solid var(--text-color-dark-bg);
@@ -132,16 +122,14 @@ p{
     background-color: var(--main-background-color);
     border-color: var(--text-color-dark-bg);
 }
-.lang-menu .dropdown-item{
-    margin-left: 7px;
-}
 
 .lang-menu .dropdown-item:hover{
     background-color: transparent;
 }
 
 .lang-menu .dropdown-item:hover::before{
-    content: '';
+    color: var(--main-lime-color);
+    /* content: '';
     position: absolute;
     background: var(--main-lime-color);
     border-radius: 100%;
@@ -149,7 +137,7 @@ p{
     width: 8px;
     transform: translateY(50%);
     bottom: 50%;
-    left: 0;
+    left: 0; */
 }
 
 .lang-menu .custom__active::before{
@@ -161,10 +149,10 @@ p{
 #index-1{
     background-color: var(--main-background-color);
     overflow: visible;
-    min-height: 692px;
+    min-height: 630px;
     margin-top: -130px;
     padding-top: 130px;
-    padding-bottom: 75px;}
+}
 
 #index-1 h1,
 #index-1 p,
@@ -197,7 +185,6 @@ p{
     align-items : center;
     background: #FCFCFC 0% 0% no-repeat padding-box;
     position: relative;
-    padding: 5rem 0;
 }
 
 #index-2 h3,
@@ -231,10 +218,6 @@ p{
     height: 200px;
     width: 250px;}
 
-#index-3,
-#index-4{
-    padding: 5rem 0;
-}
 
 #index-4{
     min-height: 425px;
@@ -255,11 +238,6 @@ p{
     color: #1D1D1D;
 }
 
-
-#index-5{
-    padding: 5rem 0;
-}
-
 #index-5 .custom__header{
     text-align: left;
 }
@@ -276,17 +254,12 @@ p{
     color: #182312;
 }
 
-#index-6{
-    padding-bottom: 5rem;
-}
-
 #index-7{
     display : flex;
     align-items : center;
     background: #FCFCFC 0% 0% no-repeat padding-box;
-    min-height: 350px;
+    min-height: 300px;
     overflow: hidden;
-    margin-bottom: 5rem;
 }
 
 #index-7 h1{
@@ -305,9 +278,7 @@ p{
     color: #FFFFFF;
 }
 
-#index-8{
-    padding-bottom: 5rem;
-}
+
 #index-8 .how-to-start-card{
     background: #F9F9F9 0% 0% no-repeat padding-box;
     border-radius: var(--border-radius);
@@ -410,9 +381,61 @@ p{
         background-image: url(../img/start-investing.png);
         background-position: -180px;
     }
+
+    .custom__no-background{
+        background-color: transparent;
+    }
+    .custom__active::before{
+        content: '';
+        position: absolute;
+        background: var(--main-lime-color);
+        border-radius: 100%;
+        height: 8px;
+        width: 8px;
+        transform: translateX(-50%);
+        bottom: 0px;
+        left: 50%;
+    }
+    #index-2 h3,
+    #index-2 p{
+        padding-right: 30%;
+        text-align: left;
+    }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 767px) {
+
+    .navbar-nav{
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+        border-top: 1px solid var(--text-color-dark-bg);
+        border-bottom: 1px solid var(--text-color-dark-bg);
+    }
+
+    .nav-link,
+    .dropdown-item{
+        color: var(--text-color-dark-bg);
+    }
+
+    .dropdown-item:hover{
+        color: var(--main-lime-color);
+    }
+
+    .custom__active{
+        color: var(--main-lime-color);
+    }
+
+    .custom__divider{
+        margin: .75rem auto;
+        /* border-bottom: 1px solid var(--text-hover-color);
+        width: 30%; */
+        
+    }
+
+    #index-1{
+        text-align: center;
+    }
 
     table.responsive-table,
     table.responsive-table thead,
@@ -429,7 +452,6 @@ p{
         top: -9999px;
         left: -9999px;
     }
-
 
     table.responsive-table th {
         padding: .25em;
@@ -462,13 +484,18 @@ p{
         text-align: right;
         content: attr(data-label);
     }
+
+    #index-5 .custom__header,
+    #index-7{
+        text-align: center;
+    }
 }
 
 
 
 /* ================SHOW ON SCREENS WIDER THAN 960px ================*/
 @media (min-width:960px){
-    .custom__nav-item a:hover::before{
+    /* .custom__nav-item a:hover::before{
         content: '';
         position: absolute;
         background: var(--main-lime-color);
@@ -478,34 +505,29 @@ p{
         transform: translateX(-50%);
         bottom: 0px;
         left: 50%;
-    }
+    } */
 
-    .custom__active::before{
-        content: '';
-        position: absolute;
-        background: var(--main-lime-color);
-        border-radius: 100%;
-        height: 8px;
-        width: 8px;
-        transform: translateX(-50%);
-        bottom: 0px;
-        left: 50%;
-    }
 
-    #index-2 h3,
-    #index-2 p{
-        padding-right: 30%;
-        text-align: left;
-    }
     #index-7{
         background-position: -70px;
     }
+}
+
+@media (min-width:992px){
+    
 }
 
 @media (min-width:1200px) {
     #index-7{
         background-position: 60px;
     }
+    .container,
+    .container-lg{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    
+
 }
 
 @media (min-width:1500px){
