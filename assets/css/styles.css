@@ -643,6 +643,10 @@ p {
         padding-right: 10%;
     }
 
+    #about-2 p{
+        padding: .5rem 2rem;
+    }
+
 }
 
 
