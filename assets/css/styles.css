@@ -13,6 +13,10 @@ body {
     overflow-x: hidden;
 }
 
+td{
+    vertical-align: middle;
+}
+
 a {
     text-decoration: none;
 }
@@ -95,6 +99,12 @@ p{
     top: 50%;
     left: 0;
     background: var(--main-background-color);
+}
+
+.custom__flag{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
 }
 
 .logo {
@@ -362,16 +372,6 @@ p{
     min-height: 450px;
 }
 
-.map-image-container{
-    height: 350px;
-}
-
-#about-5 .map-image{
-    background: 50% 50% no-repeat url(../img/map.svg);
-    height: 100%;
-    width: 100%;
-}
-
 #about-5 h1{
     text-align: center;
     margin-bottom: 2rem;
@@ -399,8 +399,16 @@ p{
     margin-top: .25rem;
 }
 
-#about-5 .map-card{
-    padding: 1rem 2rem;
+#about-5 .map-image-container{
+    display: flex;
+    align-items: center;
+}
+
+#about-5 .map-image{
+    height: auto;
+    max-width: 100%;
+    padding-right: 20px;
+    scale: 2;
 }
 
 /* #about-6{
@@ -632,6 +640,15 @@ p{
     #about-6 p {
         padding: .5rem 2rem;
 
+    }
+
+    #about-7 .viasms-logo{
+        height: 25px;
+    }
+
+    #about-7 .custom__flag{
+        height: 25px;
+        width: 25px;
     }
 }
 
