@@ -2,7 +2,7 @@
     --main-background-color: #091125;
     --main-lime-color: #a4d321;
     --text-color-dark-bg: #fff;
-    --text-color-light-bg: #000;
+    --text-color-light-bg: #1D1D1D;
     --text-hover-color: #ddd;
 
     --border-radius: 10px;
@@ -17,13 +17,27 @@ a {
     text-decoration: none;
 }
 
-h1,
-p {
-    color: var(--text-color-dark-bg);
+h1{
+    font: normal normal 600 35px/45px Work Sans;
+    letter-spacing: 0px;
+    color: var(--text-color-light-bg);
 }
 
-.custom__color-blue {
+h3{
+    font: normal normal 600 16px/24px Work Sans;
+    letter-spacing: 0px;
+    color: var(--text-color-light-bg);
+}
+
+p{
+    font: normal normal normal 16px/24px Work Sans;
+    letter-spacing: 0px;
+    color: var(--text-color-light-bg);
+}
+
+.custom__header-blue {
     color: #045FA0 !important;
+    font: normal normal 600 32px/52px Work Sans;
 }
 
 .custom__middle {
@@ -57,10 +71,7 @@ p {
     -webkit-backdrop-filter: blur(30px);
 }
 
-.custom__header {
-    font: normal normal 600 35px/45px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
+.custom__center-header {
     text-align: center;
 }
 
@@ -156,20 +167,23 @@ p {
     padding-bottom: 130px;
 }
 
+#index-1 h1{
+    font: normal normal bold 64px/70px Work Sans;
+}
+
+#index-1 p{
+    font: normal normal normal 20px/30px Work Sans;
+}
+
 #index-1 h1,
 #index-1 p,
 #index-1 a {
+    color: var(--text-color-dark-bg);
     margin: 2rem 0;
 }
 
 #index-1 h1 {
-    font: normal normal bold 64px/70px Work Sans;
-    letter-spacing: 0px;
     margin-top: 28px;
-}
-
-#index-1 p {
-    font: normal normal normal 20px/30px Work Sans;
 }
 
 #index-1 .custom__button {
@@ -190,24 +204,9 @@ p {
     z-index: -1;
 }
 
-#index-2 h3,
+#index-2 h1,
 #index-2 p {
-    color: var(--text-color-light-bg);
-    text-align: center;
     position: relative;
-    z-index: 2;
-}
-
-#index-2 h3 {
-    font: normal normal 600 35px/45px Work Sans;
-    letter-spacing: 0px;
-    color: rgba(29, 29, 29, 1);
-}
-
-#index-2 p {
-    font: normal normal normal 16px/24px Work Sans;
-    letter-spacing: 0px;
-    color: rgba(9, 17, 37, 1);
 }
 
 .index-2-bg-image {
@@ -220,8 +219,8 @@ p {
     background-color: transparent;
     height: 200px;
     width: 250px;
+    z-index: -1;
 }
-
 
 #index-4 {
     min-height: 425px;
@@ -232,34 +231,6 @@ p {
     background-position: bottom;
 }
 
-#index-4 h4 {
-    font: normal normal 600 16px/24px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
-}
-
-#index-4 p {
-    font: normal normal normal 16px/24px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
-}
-
-#index-5 .custom__header {
-    text-align: left;
-}
-
-#index-5 h4 {
-    font: normal normal 600 16px/24px Work Sans;
-    letter-spacing: 0px;
-    color: #182312;
-}
-
-#index-5 p {
-    font: normal normal normal 16px/24px Work Sans;
-    letter-spacing: 0px;
-    color: #182312;
-}
-
 #index-7 {
     display: flex;
     align-items: center;
@@ -268,45 +239,14 @@ p {
     overflow: hidden;
 }
 
-#index-7 h1 {
-    font: normal normal 600 35px/45px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
-}
-
-#index-7 p {
-    font: normal normal normal 20px/22px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
-}
-
-#index-7 a {
-    font: normal normal 600 16px/26px Work Sans;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-}
-
-
 #index-8 .how-to-start-card {
     background: #F9F9F9 0% 0% no-repeat padding-box;
     border-radius: var(--border-radius);
     padding: 30px;
 }
 
-#index-8 h4 {
-    text-align: center;
-    font: normal normal 600 20px/33px Work Sans;
-    letter-spacing: 0px;
-    color: #182312;
-}
-
-#index-8 p {
-    text-align: center;
-    font: normal normal normal 16px/24px Work Sans;
-    letter-spacing: 0px;
-    color: #182312;
-}
-
+#index-8 h3 ,
+#index-8 p,
 #index-8 a {
     text-align: center;
 }
@@ -324,11 +264,14 @@ p {
     padding: 0;
 }
 
-.footer h4 {
-    font: normal normal 600 16px/24px Work Sans;
-    letter-spacing: 0px;
+.footer h3 {
+    color: var(--text-color-dark-bg);
     text-transform: uppercase;
     margin-bottom: .75rem;
+}
+
+.footer p{
+    color: var(--text-color-dark-bg);
 }
 
 .footer li {
@@ -338,10 +281,6 @@ p {
 .footer a {
     text-decoration: none;
     color: var(--text-color-dark-bg);
-}
-
-.footer p,
-.footer a {
     font: normal normal normal 16px/24px Work Sans;
     letter-spacing: 0px;
     margin: 0;
@@ -366,21 +305,7 @@ p {
 
 #about-1 h1,
 #about-2 h1 {
-    font: normal normal 600 35px/45px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
     margin-bottom: 1rem;
-}
-
-#about-1 p,
-#about-2 p {
-    font: normal normal normal 16px/24px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
-}
-
-#about-2 h1 {
-    text-align: center;
 }
 
 #about-3 {
@@ -389,34 +314,14 @@ p {
     padding-right: 20%;
 }
 
-#about-3 h1 {
-    text-align: center;
-    font: normal normal 600 35px/45px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
-}
 
 #about-3 h3 {
-    font: normal normal 600 32px/52px Work Sans;
-    letter-spacing: 0px;
-    color: #045FA0;
-    text-align: center;
     padding: 0;
 }
 
 #about-3 p {
-    font: normal normal normal 16px/24px Work Sans;
-    letter-spacing: 0px;
-    color: #091125;
     text-align: center;
     padding: 0;
-}
-
-#about-4 h1 {
-    text-align: center;
-    font: normal normal 600 35px/45px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
 }
 
 #about-4 .custom__card-container {
@@ -451,17 +356,7 @@ p {
 
 #about-4 .custom__card h3 {
     padding-top: .5rem;
-    font: normal normal 600 16px/24px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
 }
-
-#about-4 .custom__card p {
-    font: normal normal normal 16px/24px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
-}
-
 
 #about-5{
     min-height: 450px;
@@ -479,16 +374,10 @@ p {
 
 #about-5 h1{
     text-align: center;
-    font: normal normal 600 35px/45px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
     margin-bottom: 2rem;
 }
 
 #about-5 h3{
-    font: normal normal 600 16px/24px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
     margin-top: .25rem;
 }
 
@@ -499,9 +388,6 @@ p {
 }
 
 #about-5 p{
-    font: normal normal normal 16px/24px Work Sans;
-    letter-spacing: 0px;
-    color: #1D1D1D;
     margin-top: .25rem;
     padding-right: 20%;
 }
@@ -639,6 +525,11 @@ p {
         margin-top: 110px;
     }
 
+    #index-2 h1,
+    #index-2 p {
+        text-align: center;
+    }
+
     table.responsive-table,
     table.responsive-table thead,
     table.responsive-table tbody,
@@ -700,10 +591,6 @@ p {
         padding-right: 10%;
     }
 
-    #about-2 p{
-        padding: .5rem 2rem;
-    }
-
     #about-5 p{
         padding: 0;
     }
@@ -713,8 +600,6 @@ p {
     }
 
 }
-
-
 
 /* ================SHOW ON SCREENS WIDER THAN 960px ================*/
 @media (min-width:960px) {
@@ -729,8 +614,7 @@ p {
         bottom: 0px;
         left: 50%;
     } */
-
-
+    
     #index-7 {
         background-position: -70px;
     }
@@ -744,10 +628,14 @@ p {
         padding-left: 15%;
         padding-right: 15%;
     }
-
 }
 
-@media (min-width:992px) {}
+@media (min-width:992px) {
+    #index-5 h1 {
+        text-align: left;
+    }
+
+}
 
 @media (min-width:1200px) {
     #index-7 {
