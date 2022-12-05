@@ -13,7 +13,6 @@ body {
     overflow-x: hidden;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -214,7 +213,7 @@ p {
 .index-2-bg-image {
     position: absolute;
     top: 70px;
-    background-image: url('/assets/img/two-arrows.png');
+    background-image: url('../img/two-arrows.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -228,7 +227,7 @@ p {
     min-height: 425px;
     display: flex;
     align-items: center;
-    background-image: url('/assets/img/key-features.png');
+    background-image: url('../img/key-features.png');
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -478,7 +477,7 @@ p {
         top: -140px;
         width: 712px;
         height: 1000px;
-        background: url('/assets/img/homepage-illustration-1.png') 0% 0% no-repeat padding-box;
+        background: url('../img/homepage-illustration-1.png') 0% 0% no-repeat padding-box;
     }
 
     table.responsive-table {
@@ -495,7 +494,7 @@ p {
     }
 
     #index-7 {
-        background-image: url('/assets/img/start-investing.png');
+        background-image: url('../img/start-investing.png');
         background-position: -180px;
     }
 
