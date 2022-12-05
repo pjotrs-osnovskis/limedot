@@ -426,6 +426,7 @@ p {
     list-style: none;
     justify-content: center;
     gap: 1rem;
+    padding: 0;
 }
 
 #about-4 .custom__card {
@@ -459,6 +460,62 @@ p {
     font: normal normal normal 16px/24px Work Sans;
     letter-spacing: 0px;
     color: #1D1D1D;
+}
+
+
+#about-5{
+    min-height: 450px;
+}
+
+.map-image-container{
+    height: 350px;
+}
+
+#about-5 .map-image{
+    background: 50% 50% no-repeat url(../img/map.svg);
+    height: 100%;
+    width: 100%;
+}
+
+#about-5 h1{
+    text-align: center;
+    font: normal normal 600 35px/45px Work Sans;
+    letter-spacing: 0px;
+    color: #1D1D1D;
+    margin-bottom: 2rem;
+}
+
+#about-5 h3{
+    font: normal normal 600 16px/24px Work Sans;
+    letter-spacing: 0px;
+    color: #1D1D1D;
+    margin-top: .25rem;
+}
+
+#about-5 .viasms-logo{
+    width: 83px;
+    height: 45px;
+    margin-top: .5rem;
+}
+
+#about-5 p{
+    font: normal normal normal 16px/24px Work Sans;
+    letter-spacing: 0px;
+    color: #1D1D1D;
+    margin-top: .25rem;
+    padding-right: 20%;
+}
+
+#about-5 a{
+    text-decoration: underline;
+    font: normal normal 600 16px/24px Work Sans;
+    letter-spacing: 0px;
+    color: #045FA0;
+    margin-top: .25rem;
+}
+
+#about-5 .map-card{
+    padding: 1rem 2rem;
 }
 
 
@@ -645,6 +702,14 @@ p {
 
     #about-2 p{
         padding: .5rem 2rem;
+    }
+
+    #about-5 p{
+        padding: 0;
+    }
+
+    #about-5 .map-card{
+        padding: 2rem 4rem;
     }
 
 }
