@@ -429,6 +429,21 @@ p{
     top: -190px;
 }
 
+#about-7{
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+}
+
+#about-8{
+    min-height: 325px;
+    background: no-repeat url(../img/sign-up-and-invest.png);
+    display: flex;
+    align-items: center;
+}
+
+#about-8 img {
+    max-width: 385px;
+}
+
 
 /* ================SHOW ON SCREENS WIDER THAN 767px ================*/
 
@@ -684,6 +699,12 @@ p{
 @media (min-width:992px) {
     #index-5 h1 {
         text-align: left;
+    }
+}
+
+@media (max-width:992px){
+    #about-8 img {
+        max-width: 410px;
     }
 
 }
