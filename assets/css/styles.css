@@ -389,7 +389,6 @@ p{
 
 #about-5 p{
     margin-top: .25rem;
-    padding-right: 20%;
 }
 
 #about-5 a{
@@ -402,6 +401,24 @@ p{
 
 #about-5 .map-card{
     padding: 1rem 2rem;
+}
+
+/* #about-6{
+    background-image: url(../img/loan-originators-bg.svg);
+    background-repeat: no-repeat;
+    background-position: Min(0px, calc(100vw - 450px)) bottom;
+} */
+
+#about-6 .loan-originators-container{
+    position: relative;
+}
+
+#about-6 .loan-originators-background{
+    position: absolute;
+    height: 500px;
+    width: auto;
+    left: -210px;
+    top: -190px;
 }
 
 
@@ -513,7 +530,6 @@ p{
         margin: .75rem auto;
         /* border-bottom: 1px solid var(--text-hover-color);
         width: 30%; */
-
     }
 
     #index-1 {
@@ -564,7 +580,6 @@ p{
         padding: 1rem;
         font-weight: 600;
         color: #333839;
-
     }
 
     table.responsive-table td:before {
@@ -596,9 +611,28 @@ p{
     }
 
     #about-5 .map-card{
-        padding: 2rem 4rem;
+        padding: 2rem;
     }
 
+    #about-6 .loan-originators-container {
+        position: relative;
+        padding-bottom: 3rem;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    #about-6 .loan-originators-background {
+        position: absolute;
+        height: 500px;
+        width: auto;
+        left: -220px;
+        top: -190px;
+    }
+
+    #about-6 p {
+        padding: .5rem 2rem;
+
+    }
 }
 
 /* ================SHOW ON SCREENS WIDER THAN 960px ================*/
