@@ -102,8 +102,8 @@ p{
 }
 
 .custom__flag{
-    width: 48px;
-    height: 48px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
 
@@ -432,6 +432,11 @@ p{
 #about-7{
     background: #F7F7F7 0% 0% no-repeat padding-box;
 }
+
+#about-7 .viasms-logo{
+    height: 30px;
+}
+
 
 #about-8{
     min-height: 325px;
