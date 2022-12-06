@@ -48,7 +48,8 @@ p{
 }
 
 .custom__button {
-    padding: 10px 50px;
+    padding: 10px;
+    width: 50%;
     color: var(--text-color-dark-bg);
     border: 1px solid var(--text-color-dark-bg);
     border-radius: var(--border-radius);
@@ -849,11 +850,13 @@ input[type='radio']{
 
 .easy-steps div{
     height: 25px;
-    width: 25px;
+    min-width: 25px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
     border-radius: 50%;
     color: #fff;
     font: normal normal medium 16px/24px Work Sans;
-    text-align: center;
     margin-right: .5rem;
 }
 
@@ -1164,6 +1167,9 @@ input[type='radio']{
         padding: 0;
     }
 
+    #verify-account .main-container{
+        padding: 1rem;
+    }
 }
 
 /* ================SHOW ON SCREENS WIDER THAN 960px ================*/
