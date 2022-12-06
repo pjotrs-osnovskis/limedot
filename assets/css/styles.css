@@ -546,10 +546,52 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 85vw;
 }
 
 #how-it-works-5{
     background: url(../img/sign-up-and-invest.png);
+}
+
+#security-1{
+    background: #FCFCFC;
+    min-height: 325px;
+}
+
+#security-image{
+    max-width: 85vw;
+    position: absolute;
+    top: 120px;
+    left: 220px;
+}
+
+#security-2{
+    margin-top: 10rem;
+}
+
+.security-card{
+    background-color: #F9F9FA;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+
+.security-table tr{
+    border-bottom: 1px solid #DDDADA;
+}
+
+.security-table td{
+    vertical-align: top;
+    padding: .5rem;    
+}
+
+
+.security-table tr:last-child{
+    border-bottom: none;
+}
+
+#security-5{
+    background: transparent linear-gradient(0deg, #F7F7F7 0%, #F7F7F700 100%) 0% 0% no-repeat padding-box;
 }
 
 /* ================SHOW ON SCREENS WIDER THAN 767px ================*/
