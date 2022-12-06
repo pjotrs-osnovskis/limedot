@@ -587,11 +587,16 @@ footer{
     margin-top: 10rem;
 }
 
+.security-card-border{
+    border: 10px solid #fff;
+
+}
+
 .security-card{
     background-color: #F9F9FA;
-    border: 10px solid #fff;
     border-radius: var(--border-radius);
     padding: 1rem;
+    height: 100%;
 }
 
 
