@@ -640,7 +640,22 @@ footer{
     left: -220px;
 }
 
+.error-404{
+    position: relative;
+}
 
+.error-404 img {
+    position: absolute;
+    width: 660px;
+    top: -195px;
+    left: -130px;
+}
+
+.back-to-home-btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
 
 /* ================SHOW ON SCREENS WIDER THAN 767px ================*/
 
