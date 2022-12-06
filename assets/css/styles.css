@@ -628,6 +628,20 @@ footer{
 .custom__form-border{
     border: 2px solid var(--text-color-light-bg) ;
 }
+
+.forgot-password-image{
+    position: relative;
+}
+
+.forgot-password-image img{
+    position: absolute;
+    width: 755px;
+    top: -275px;
+    left: -220px;
+}
+
+
+
 /* ================SHOW ON SCREENS WIDER THAN 767px ================*/
 
 @media (min-width:767px) {
