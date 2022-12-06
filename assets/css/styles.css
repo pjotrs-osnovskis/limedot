@@ -279,8 +279,9 @@ footer{
     padding: 0;
 }
 
-.footer h3 {
+.footer h4 {
     color: var(--text-color-dark-bg);
+    font: normal normal 600 16px/24px Work Sans;
     text-transform: uppercase;
     margin-bottom: .75rem;
 }
