@@ -261,6 +261,11 @@ p{
     text-align: center;
 }
 
+footer{
+    z-index: 10;
+    position: relative;
+}
+
 .footer {
     background-color: var(--main-background-color);
     padding-top: 5rem;
@@ -594,6 +599,34 @@ p{
     background: transparent linear-gradient(0deg, #F7F7F7 0%, #F7F7F700 100%) 0% 0% no-repeat padding-box;
 }
 
+.single-section-page{
+    background-color: #f3f3f3;
+}
+
+.single-section-page label{
+    margin: 0;
+}
+
+.single-section-card{
+    background-color: #fff;
+    border-radius: var(--border-radius);
+}
+
+.login-image{
+    position: relative;
+    z-index: 1;
+}
+
+.login-image img{
+    position: absolute;
+    width: 900px;
+    top: -30px;
+    left: -440px;
+}
+
+.custom__form-border{
+    border: 2px solid var(--text-color-light-bg) ;
+}
 /* ================SHOW ON SCREENS WIDER THAN 767px ================*/
 
 @media (min-width:767px) {
