@@ -58,6 +58,10 @@ p{
     background: #1D1D1D 0% 0% no-repeat padding-box;
 }
 
+.custom__button:hover{
+    color: var(--text-hover-color);
+}
+
 .custom__toggler {
     border: none;
 }
@@ -312,11 +316,17 @@ footer{
 }
 
 #about-1 {
-    min-height: 480px;
+    margin-bottom: 10rem;
     text-align: center;
-    background: #FCFCFC url(../img/about-limedot.png) 50% 120px no-repeat;
-    padding-left: 20%;
-    padding-right: 20%;
+    background-color: #FCFCFC;
+    padding-bottom: 10rem;}
+
+.about-image-1{
+    position: absolute;
+    width: 1000px;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -48px;
 }
 
 #about-1 h1,
@@ -562,13 +572,15 @@ footer{
 #security-1{
     background: #FCFCFC;
     min-height: 325px;
+    position: relative;
 }
 
 #security-image{
-    max-width: 85vw;
     position: absolute;
-    top: 120px;
-    left: 220px;
+    width: 1000px;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -230px;
 }
 
 #security-2{
@@ -578,6 +590,7 @@ footer{
 .security-card{
     background-color: #F9F9FA;
     border-radius: var(--border-radius);
+    border: 10px solid #fff;
     padding: 1rem;
 }
 
