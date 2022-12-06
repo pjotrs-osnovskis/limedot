@@ -176,7 +176,7 @@ p{
     background-color: var(--main-background-color);
     overflow: visible;
     min-height: 630px;
-    margin-top: -130px;
+    margin-top: -132px;
     padding-top: 128px;
     padding-bottom: 130px;
 }
@@ -589,8 +589,8 @@ footer{
 
 .security-card{
     background-color: #F9F9FA;
-    border-radius: var(--border-radius);
     border: 10px solid #fff;
+    border-radius: var(--border-radius);
     padding: 1rem;
 }
 
