@@ -701,7 +701,8 @@ footer{
     margin: .5rem 0;
     background-color: #fff;
     border-radius: var(--border-radius);
-    margin-left: 25px
+    margin-left: 25px;
+    align-self: center;
 }
 
 #register .steps-wrap li:first-child:after {
