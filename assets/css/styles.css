@@ -847,6 +847,9 @@ input[type='radio']{
 .easy-steps{
     display: flex;
 }
+.easy-steps p{
+    margin: .25rem 0;
+}
 
 .easy-steps div{
     height: 25px;
