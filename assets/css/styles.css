@@ -1222,6 +1222,13 @@ input[type='radio'] {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    .error-404 img {
+        top: 224px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
 }
 
 /* ================SHOW ON SCREENS WIDER THAN 960px ================*/
