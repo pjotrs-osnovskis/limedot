@@ -1040,10 +1040,12 @@ input[type='radio'] {
 
 @media only screen and (max-width: 767px) {
 
-    button:focus{
-        outline: none !important;
+    *:focus,
+    *.focus-visible{
+        box-shadow: none !important;
     }
-    #index-1 h1 {
+    
+     #index-1 h1 {
         font: normal normal bold 40px/50px Work Sans !important;
     }
 
