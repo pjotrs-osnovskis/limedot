@@ -13,7 +13,7 @@
 
     <!-- GOOGLE FONTS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
-    
+
     <!-- JQUERY 3.6.1-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
@@ -58,8 +58,8 @@
                         <a class="btn login-button" href="login.html">Login</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle lang-menu-button" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle lang-menu-button" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             EN
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end lang-menu">
@@ -69,13 +69,18 @@
                         </ul>
                     </li>
                 </ul>
-                <a class="custom__button d-block text-center w-100 mt-4 start-investing-button d-md-none" href="#">Start investing</a>
+                <a class="custom__button d-block text-center w-100 mt-4 start-investing-button d-md-none" href="#">Start
+                    investing</a>
 
             </div>
         </div>
     </nav>
 
-    <section id="index-1" class="overflowing_background">
+    <section id="index-1">
+        <div class="overflowing_background"></div>
+        <div class="d-md-none main_image">
+            <!-- <img src="../assets/img/homepage-illustration-1.png" alt=""> -->
+        </div>
         <div class="container-lg">
             <div class="row">
                 <div class="col-12 col-md-6 mt-0 mt-sm-5">
@@ -90,8 +95,9 @@
     <section id="index-2" class="py-4 py-lg-5">
         <div class="container-lg ">
             <div class="row ">
-                <div class="col-12 col-md-6 custom__middle ps-sm-5">
+                <div class="col-12 col-md-6 custom__middle py-3 py-md-0">
                     <div class="index-2-bg-image d-none d-md-block"></div>
+                    <img class="two-arrows-image d-md-none" src="../assets/img/two-arrows.png" alt="">
                     <h1>Our current stats</h1>
                     <p>Best performing marketplace to invest in loans with up to 12,5% ROI</p>
                 </div>
@@ -216,7 +222,51 @@
             <div class="mb-3 mb-lg-4">
                 <h1 class="custom__center-header">Our key features</h1>
             </div>
-            <div class="row gx-lg-3 px-lg-5 custom__middle">
+
+            <div id="carouselExampleIndicators" class="carousel slide d-md-none" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card custom__card">
+                            <div class="card-body ">
+                                <h3>&#9866; Skin in the game</h3>
+                                <p>Our Founders own both the platform and loan originators, which means they are
+                                    vouching
+                                    for Limedot with their own money. That's what we call reliable</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card custom__card">
+                            <div class="card-body ">
+                                <h3>&#9866; Full transparency</h3>
+                                <p>We believe trust is a vital part of our business. That's why we're disclosing all the
+                                    numbers, so you can easily evaluate the safety of your investments</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card custom__card">
+                            <div class="card-body ">
+                                <h3>&#9866; Industry experience</h3>
+                                <p>Limedot is equipped with advanced features for you to invest with confidence:
+                                    Auto-Invest
+                                    for better diversification, a Secondary Market for faster exit, and much more</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row gx-lg-3 px-lg-5 custom__middle d-none d-md-block">
                 <div class="col-12 col-lg-4 my-1 my-lg-0 d-flex align-items-stretch">
                     <div class="card custom__card">
                         <div class="card-body ">
@@ -391,7 +441,7 @@
         <div class="container-lg">
             <div class="row">
                 <div class="col-md-6 d-none d-md-block"></div>
-                <div class="col-12 col-md-6 custom__middle">
+                <div class="col-12 col-md-6 custom__middle custom__section">
                     <h1>Passive income is just moments away</h1>
                     <p>Start investing today</p>
                     <a class="custom__button " href="#">Start investing</a>
@@ -400,7 +450,7 @@
         </div>
     </section>
 
-    <section id="index-8" class="py-4 py-lg-5">
+    <section id="index-8" class="p-4 py-lg-5">
         <div class="container-lg">
             <div class="mb-3 mb-lg-4">
                 <h1 class="custom__center-header">How To Start</h1>
@@ -426,16 +476,103 @@
         </div>
     </section>
 
-    <script src="../assets/js/scripts.js"></script>
-
     <!-- CUSTOM JAVASCRIPT -->
     <script src="../assets/js/scripts.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 </body>
 <footer>
     <div class="footer">
+        <div class="container-lg pb-3">
+
+            <div class="row mb-3 px-4">
+                <div class="col-12 py-5">
+                    <a href="index.html"><img src="../assets/img/logo-dark-bg.svg" alt="" class="logo"></a>
+                </div>
+                <div class="col-12">
+
+                    <h4>&#9866; Contact Info</h4>
+                    <ul>
+                        <li><a href="mailto:support@limedot.io">support@limedot.io</a></li>
+                        <li>
+                            <p>Limedot Platform Limited Company No. 123456</p>
+                        </li>
+                        <li>
+                            <p>Legal adress: <br> 77 Lower Camden Street Dublin 2 DO2 XE80, Dublin</p>
+                        </li>
+                        <li>
+                            <p>Business hours: <br> Monday-Friday <br> 9:00 - 18:00, GMT +2</p>
+                        </li>
+                        <li>
+                            <p>Follow us:</p>
+                        </li>
+                        <li>
+                            <ul class="social-link-list">
+                                <li><a href="#"><img src="../assets/img/facebook.svg" alt=""></a></li>
+                                <li><a href="#"><img src="../assets/img/instagram.svg" alt=""></a></li>
+                                <li><a href="#"><img src="../assets/img/linkedin.svg" alt=""></a></li>
+                                <li><a href="#"><img src="../assets/img/telegram.svg" alt=""></a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        <div class="accordion d-md-none" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h4>&#9866; About Us</h4>
+
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Statistics</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Affiliate program</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookies Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h4>&#9866; Investing</h4>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Security & Risks</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">P2P glossary</a></li>
+                            <li><a href="#">Loan originators</a></li>
+                            <li><a href="#">Client Profile</a></li>
+                            <li><a href="#">Loyalty Program</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="footer d-none d-md-block">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12">
