@@ -666,7 +666,7 @@ footer {
     position: absolute;
     width: 755px;
     top: -275px;
-    left: -220px;
+    right: -145px;
 }
 
 .error-404 {
@@ -1214,6 +1214,13 @@ input[type='radio'] {
     .single-section-page {
         background-color: #fff;
         height: 50rem;
+    }
+    .forgot-password-image img {
+        position: absolute;
+        width: 650px;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
