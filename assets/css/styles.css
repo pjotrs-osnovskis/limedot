@@ -1040,6 +1040,9 @@ input[type='radio'] {
 
 @media only screen and (max-width: 767px) {
 
+    button:focus{
+        outline: none !important;
+    }
     #index-1 h1 {
         font: normal normal bold 40px/50px Work Sans !important;
     }
@@ -1279,12 +1282,12 @@ input[type='radio'] {
     }
 
     .accordion-button:not(.collapsed)::after{
-        background: no-repeat url(../img/chevron-up.svg);
+        background: no-repeat url(../img/chevron-down.svg);
+
         margin-left: 0;
         height: 15px;
         width: 20px;
         align-self: baseline;
-
     }
     
     .footer{
