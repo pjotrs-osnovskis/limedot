@@ -15,5 +15,5 @@ var scrollPosition = [
 var html = jQuery('body'); // it would make more sense to apply this to body, but IE7 won't have that
 html.data('scroll-position', scrollPosition);
 html.data('previous-overflow', html.css('overflow'));
-html.css('overflow-x', 'hidden');
+html.css('overflow-x', 'clip');
 window.scrollTo(scrollPosition[0], scrollPosition[1]);

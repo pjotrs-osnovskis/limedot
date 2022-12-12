@@ -395,6 +395,7 @@ footer {
 
 #about-5 {
     min-height: 450px;
+    position: relative;
 }
 
 #about-5 h1 {
@@ -425,15 +426,22 @@ footer {
 }
 
 #about-5 .map-image-container {
+    position: relative;
     display: flex;
     align-items: center;
 }
 
+#about-5 .map-card {
+    margin-left: 50%;
+}
+
+
 #about-5 .map-image {
-    height: auto;
     max-width: 100%;
     padding-right: 20px;
-    scale: 2;
+    position: absolute;
+    left: -275px;
+    top: -90px;
 }
 
 /* #about-6{
@@ -923,11 +931,13 @@ input[type='radio'] {
     padding-left: 0;
 }
 
-#how-it-works-4 h3{
+#how-it-works-4 h3,
+#security-2 h3{
     padding-left: 1.5rem;
 }
 
-#how-it-works-4 .text-container{
+#how-it-works-4 .text-container,
+.security-card{
     position: relative;
 }
 
@@ -938,6 +948,15 @@ input[type='radio'] {
     position: absolute;
     left: 12px;
     top: 11px;        
+}
+
+#security-2 h3::before{
+    content: "";
+    border-top: 2px solid #000;
+    width: 1rem;
+    position: absolute;
+    left: 12px;
+    top: 26px;        
 }
 
 
@@ -1065,7 +1084,10 @@ input[type='radio'] {
         box-shadow: none !important;
     }
 
-    .navbar
+    section{
+        overflow-x: clip;
+    }
+
 
     #index-1 h1 {
         font: normal normal bold 40px/50px Work Sans !important;
@@ -1402,25 +1424,22 @@ input[type='radio'] {
         padding: 0;
     }
 
+    #about-5 {
+        height: 775px;
+    }
+    
     #about-5 .map-card {
-        padding: 1rem;
-        background-color: #fff;
-        border-radius: var(--border-radius);
-        margin-top: 3rem;
+        margin-top: 15rem;
+        margin-left: 0;
     }
-
-    #about-5 .map-image-container {
-        height: 180px;
-    }
-
+    
     #about-5 .map-image {
-        position: absolute;
-        width: 100%;
-        scale: 2;
+        scale: 3;
         transform: translateX(-50%);
-        left: 90%;
+        left: 138%;
+        top: 1.5rem;
     }
-
+    
     #about-6 .loan-originators-container {
         position: relative;
         padding-bottom: 1rem;
@@ -1557,7 +1576,7 @@ input[type='radio'] {
         top: -115px;
     }
     #how-it-works-4{
-        height: 1050px;
+        height: 1000px;
         position: relative;
     }
     #how-it-works-4 img {
@@ -1565,9 +1584,9 @@ input[type='radio'] {
         position: absolute;
         transform: translateX(-50%);
         left: 50%;
-        max-width: 105%;
+        max-width: 110%;
         margin: 0;
-        bottom: 0;
+        bottom: -25px;
     }
 
 
@@ -1577,6 +1596,15 @@ input[type='radio'] {
         text-align: center;
     }
 
+    #security-image {
+        position: absolute;
+        width: 140%;
+        transform: translateX(-50%);
+        left: 55%;
+        top: 210px;
+        margin-left: 0;
+        margin-top: 0;
+    }
 
     .active-step {
         width: 100% !important;
