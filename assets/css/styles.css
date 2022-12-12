@@ -620,14 +620,57 @@ footer {
     height: 100%;
 }
 
+.security-table .security-card{
+    background-color: transparent;
+}
+
+#security-2 .security-card {
+    border-radius: 0;
+}
+
+#security-2 .security-card::before,
+#security-2 .security-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 70px;
+    height: 100%;
+    background-color: #FAFAF9;
+}
+
+#security-2 .security-card::before{
+    left: -70px;
+}
+
+#security-2 .security-card::after {
+    right: -70px;
+}
+
+
+.security-table .security-card p{
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+.security-table .security-card p::before {
+    content: "";
+    background: url(../img/icon-checkmark.svg) no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 1rem;
+}
 
 .security-table tr {
     border-bottom: 1px solid #DDDADA;
+    position: relative;
 }
 
 .security-table td {
     vertical-align: top;
     padding: .5rem;
+    padding-left: .5rem !important;
 }
 
 
