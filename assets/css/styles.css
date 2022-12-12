@@ -1478,6 +1478,16 @@ input[type='radio'] {
         width: 100%;
         top: 0;
     }
+    #about-8 p{
+        text-align: center;
+    }
+
+    #about-8 .custom__button{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
 
     #how-it-works-1 .custom__card {
         margin-top: 3rem;
