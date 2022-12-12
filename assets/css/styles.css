@@ -923,10 +923,33 @@ input[type='radio'] {
     padding-left: 0;
 }
 
+#how-it-works-4 h3{
+    padding-left: 1.5rem;
+}
+
+#how-it-works-4 .text-container{
+    position: relative;
+}
+
+#how-it-works-4 h3::before{
+    content: "";
+    border-top: 2px solid #000;
+    width: 1rem;
+    position: absolute;
+    left: 12px;
+    top: 11px;        
+}
+
+
 
 /* ================SHOW ON SCREENS WIDER THAN 767px ================*/
 
 @media (min-width:767px) {
+
+    .custom__no-background {
+        background-color: transparent;
+    }
+    
 
     .overflowing_background {
         background: 50% url(../img/homepage-illustration-1.png);
@@ -971,9 +994,6 @@ input[type='radio'] {
     }
 
 
-    .custom__no-background {
-        background-color: transparent;
-    }
 
     .custom__active {
         color: var(--text-color-dark-bg);
@@ -1045,6 +1065,8 @@ input[type='radio'] {
         box-shadow: none !important;
     }
 
+    .navbar
+
     #index-1 h1 {
         font: normal normal bold 40px/50px Work Sans !important;
     }
@@ -1083,7 +1105,6 @@ input[type='radio'] {
         text-align: center;
         padding: 11px 35px;
         width: auto;
-        z-index: 2;
     }
 
     .navbar {
@@ -1124,7 +1145,6 @@ input[type='radio'] {
     }
 
     #index-1 {
-        padding: 3rem 0;
         height: 834px;
         position: relative;
         overflow-x: clip;
@@ -1146,7 +1166,7 @@ input[type='radio'] {
         background: 50% url(../img/homepage-illustration-1.png);
         width: 807px;
         height: 933px;
-        top: -9px;
+        top: 0;
         left: 45px;
         position: absolute;
     }
@@ -1525,12 +1545,6 @@ input[type='radio'] {
         left: 90%;
         top: -115px;
     }
-    #how-it-works-4 .text-container{
-        position: relative;
-    }
-    #how-it-works-4 h3{
-        padding-left: 1.5rem;
-    }
     #how-it-works-4{
         height: 1050px;
     }
@@ -1543,14 +1557,6 @@ input[type='radio'] {
         margin: 0;
     }
 
-    #how-it-works-4 h3::before{
-        content: "";
-        border-top: 2px solid #000;
-        width: 1rem;
-        position: absolute;
-        left: 12px;
-        top: 11px;        
-    }
 
     #how-it-works-5 .custom__button{
         display: block;
