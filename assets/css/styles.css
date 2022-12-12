@@ -1661,15 +1661,24 @@ input[type='radio'] {
         text-align: center;
     }
 
+    #security-1{
+        background-color: #fff;
+    }
+
     #security-image {
         position: absolute;
         width: 140%;
         transform: translateX(-50%);
         left: 55%;
-        top: 210px;
+        top: 130px;
         margin-left: 0;
         margin-top: 0;
     }
+
+    #security-2 {
+        margin-top: 7rem;
+    }
+    
 
     .active-step {
         width: 100% !important;
