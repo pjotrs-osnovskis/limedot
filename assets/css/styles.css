@@ -1478,7 +1478,7 @@ input[type='radio'] {
         width: 100%;
         top: 0;
     }
-    #about-8 p
+    #about-8 p,
     #about-8 h1{
         text-align: center;
     }
