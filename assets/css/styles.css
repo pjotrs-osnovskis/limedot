@@ -1041,48 +1041,51 @@ input[type='radio'] {
 @media only screen and (max-width: 767px) {
 
     *:focus,
-    *.focus-visible{
+    *.focus-visible {
         box-shadow: none !important;
     }
-    
-     #index-1 h1 {
+
+    #index-1 h1 {
         font: normal normal bold 40px/50px Work Sans !important;
     }
 
     h1 {
         font: normal normal 600 24px/34px Work Sans !important;
     }
-    
+
     h3 {
         font: normal normal 600 16px/24px Work Sans !important;
     }
-    
+
     p {
         font: normal normal normal 16px/24px Work Sans !important;
     }
 
-    #index-1 h1, #index-1 p, #index-1 a {
+    #index-1 h1,
+    #index-1 p,
+    #index-1 a {
         margin: 1rem 0;
         position: relative;
     }
+
     #index-1 h1 {
         text-align: start;
         padding-right: 22%;
     }
 
-    #index-1 p{
+    #index-1 p {
         text-align: start;
         padding-right: 50%;
     }
 
-    .start-investing-button{
+    .start-investing-button {
         float: left;
         text-align: center;
         padding: 11px 35px;
         width: auto;
         z-index: 2;
     }
-    
+
     .navbar {
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -1127,11 +1130,11 @@ input[type='radio'] {
         overflow-x: clip;
     }
 
-    .main_image{
+    .main_image {
         position: relative;
     }
 
-    .main_image img{
+    .main_image img {
         position: absolute;
         top: -18px;
         left: 40px;
@@ -1153,15 +1156,15 @@ input[type='radio'] {
         margin-top: 110px;
     }
 
-    #index-2 h1{
+    #index-2 h1 {
         font: normal normal 600 24px/34px Work Sans !important;
     }
 
-    #index-2 h3{
+    #index-2 h3 {
         text-align: left;
     }
 
-    .two-arrows-image{
+    .two-arrows-image {
         position: absolute;
         width: 150px;
         top: 30px;
@@ -1219,12 +1222,12 @@ input[type='radio'] {
         content: attr(data-label);
     }
 
-    td::before{
+    td::before {
         text-align: left !important;
         font: normal normal 600 16px/24px Work Sans !important;
     }
 
-    td{
+    td {
         font: normal normal normal 16px/24px Work Sans !important;
         text-align: left !important;
         padding-left: 50% !important;
@@ -1235,8 +1238,9 @@ input[type='radio'] {
         position: relative;
     }
 
-    .carousel-indicators{
-        top: 285px;    }
+    .carousel-indicators {
+        top: 285px;
+    }
 
 
     .carousel-indicators [data-bs-target] {
@@ -1245,7 +1249,7 @@ input[type='radio'] {
         border-radius: 50%;
     }
 
-    .carousel-inner{
+    .carousel-inner {
         position: absolute;
         transform: translateY(50%);
         bottom: -130px;
@@ -1256,20 +1260,22 @@ input[type='radio'] {
     #index-7 {
         text-align: center;
     }
+
     #index-7 {
         background-image: url('../img/start-investing.png');
         background-position: -180px 62px;
     }
 
-    #index-7 .custom__button{
+    #index-7 .custom__button {
         display: block;
-        width: 100%;    }
+        width: 100%;
+    }
 
-    #index-7 .custom__section{
+    #index-7 .custom__section {
         margin-bottom: 25rem;
     }
 
-    .accordion-button:not(.collapsed){
+    .accordion-button:not(.collapsed) {
         background-color: transparent;
         box-shadow: none;
         color: var(--text-color-light-bg);
@@ -1281,18 +1287,18 @@ input[type='radio'] {
     }
 
     .footer .accordion-button,
-    .footer .accordion-button:not(.collapsed){
+    .footer .accordion-button:not(.collapsed) {
         background-color: transparent;
         box-shadow: none;
         padding: 0 1rem;
         /* align-items: baseline */
     }
 
-    .footer .accordion-button h3{
+    .footer .accordion-button h3 {
         margin: 0;
     }
 
-    .accordion-button::after{
+    .accordion-button::after {
         background: no-repeat url(../img/chevron-down.svg);
         margin-left: 7px;
         height: 15px;
@@ -1300,7 +1306,7 @@ input[type='radio'] {
         margin-top: 5px;
     }
 
-    .accordion-button:not(.collapsed)::after{
+    .accordion-button:not(.collapsed)::after {
         background: no-repeat url(../img/chevron-down.svg);
         margin-left: 0;
         height: 15px;
@@ -1308,19 +1314,68 @@ input[type='radio'] {
         margin-top: -5px;
     }
 
-    .footer .accordion-button::after{
+    .footer .accordion-button::after {
         margin-top: -7px;
         filter: invert(100%);
     }
 
-    .footer .accordion-button:not(.collapsed)::after{
+    .footer .accordion-button:not(.collapsed)::after {
         margin-top: -20px;
         filter: invert(100%);
     }
 
-    
-    .footer{
+
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .footer .logo{
+        margin-bottom: 1rem;
+    }
+
+    #about-1 {
+        margin-bottom: 0;
+    }
+
+    .about-image-1 {
+        width: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+
+    #about-3 {
         padding: 0;
+        text-align: left;
+    }
+
+    #about-3 .custom__center-header {
+        text-align: left;
+    }
+
+    #about-3 p {
+        text-align: left;
+    }
+
+    #about-4 {
+        height: 470px;
+    }
+
+    #about-4 .carousel-indicators [data-bs-target] {
+        background-color: var(--text-color-light-bg);
+    }
+
+    #about-4 .carousel-indicators {
+        top: 360px;
+    }
+
+    #about-4 .carousel-inner {
+        bottom: -170px;
+    }
+
+    #about-5 {
+        height: 800px;
+        background-color: #fcfcfc;
     }
 
     #about-5 p {
@@ -1328,27 +1383,44 @@ input[type='radio'] {
     }
 
     #about-5 .map-card {
-        padding: 2rem;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: var(--border-radius);
+        margin-top: 3rem;
+    }
+
+    #about-5 .map-image-container {
+        height: 180px;
+    }
+
+    #about-5 .map-image {
+        position: absolute;
+        width: 100%;
+        scale: 2;
+        transform: translateX(-50%);
+        left: 90%;
     }
 
     #about-6 .loan-originators-container {
         position: relative;
-        padding-bottom: 3rem;
+        padding-bottom: 1rem;
         margin: 0 auto;
-        width: auto;
+        width: 100%;
     }
 
     #about-6 .loan-originators-background {
         position: absolute;
-        height: 500px;
-        width: auto;
-        left: -220px;
-        top: -190px;
+        width: 100%;
+        transform: translateX(-50%);
+        left: 35%;
+        top: -200px;
     }
 
-    #about-6 p {
-        padding: .5rem 2rem;
-
+    #about-6 .under-logo-text{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 4rem; 
     }
 
 
@@ -1359,6 +1431,131 @@ input[type='radio'] {
     #about-7 .custom__flag {
         height: 25px;
         width: 25px;
+    }
+
+    #about-7 td {
+        padding-left: 55% !important;
+    }
+
+    #about-8{
+        height: 500px;
+        background-position: bottom;
+        background-color: #f7f7f7;
+    }
+
+    #about-8 .image-container{
+        position: relative;
+    }
+
+    #about-8 .text-container{
+        margin-top: -220px;
+    }
+
+    #about-8 .binocular-image{
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 100%;
+        top: 0;
+    }
+
+    #how-it-works-1 .custom__card {
+        margin-top: 3rem;
+        height: auto;
+        max-width: 100%;
+
+    }
+    #how-it-works-1 .custom__round-circle{
+        height: 80px;
+        width: 80px;
+        top: -70px;
+    }
+
+    #how-it-works-1 .custom__card img {
+        scale: 1;
+    }
+    #how-it-works-2{
+        align-items: unset;
+        height: 875px;
+    }
+    #how-it-works-2 .paragraph{
+        padding-left: 1.5rem;
+        position: relative;
+    }
+    #how-it-works-2 .paragraph::before{
+        content: "";
+        border-top: 2px solid #000;
+        width: 1rem;
+        position: absolute;
+        left: 0;
+        top: 11px;        
+    }
+
+    #how-it-works-2 .image-container{
+        position: relative;
+    }
+
+    #how-it-works-2 .image-2{
+        position: absolute;
+        transform: translateX(-50%);
+        left: 55%;
+        width: 150%;
+        top: -50px;
+    }
+
+    #how-it-works-3 .start-investing-card {
+        background-color: transparent;
+        padding: 2rem 0;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    #how-it-works-3 .custom__button{
+        display: block;
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+    }
+    #how-it-works-3 .image-container{
+        position: relative;
+    }
+    #how-it-works-3 .image-2{
+        transform: translateX(-50%);
+        left: 90%;
+        top: -115px;
+    }
+    #how-it-works-4 .text-container{
+        position: relative;
+    }
+    #how-it-works-4 h3{
+        padding-left: 1.5rem;
+    }
+    #how-it-works-4{
+        height: 1050px;
+    }
+    #how-it-works-4 img {
+        max-width: 100;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        max-width: 105%;
+        margin: 0;
+    }
+
+    #how-it-works-4 h3::before{
+        content: "";
+        border-top: 2px solid #000;
+        width: 1rem;
+        position: absolute;
+        left: 12px;
+        top: 11px;        
+    }
+
+    #how-it-works-5 .custom__button{
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
 
@@ -1413,6 +1610,7 @@ input[type='radio'] {
         background-color: #fff;
         height: 50rem;
     }
+
     .forgot-password-image img {
         position: absolute;
         width: 650px;
@@ -1426,7 +1624,7 @@ input[type='radio'] {
         left: 50%;
         transform: translateX(-50%);
     }
-    
+
 }
 
 /* ================SHOW ON SCREENS WIDER THAN 960px ================*/
@@ -1499,8 +1697,8 @@ input[type='radio'] {
         padding-left: 15%;
         padding-right: 15%;
     }
-    
-    
+
+
 }
 
 @media (min-width:1500px) {
