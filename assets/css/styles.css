@@ -1478,7 +1478,8 @@ input[type='radio'] {
         width: 100%;
         top: 0;
     }
-    #about-8 p{
+    #about-8 p
+    #about-8 h1{
         text-align: center;
     }
 
@@ -1557,6 +1558,7 @@ input[type='radio'] {
     }
     #how-it-works-4{
         height: 1050px;
+        position: relative;
     }
     #how-it-works-4 img {
         max-width: 100;
@@ -1565,6 +1567,7 @@ input[type='radio'] {
         left: 50%;
         max-width: 105%;
         margin: 0;
+        bottom: 0;
     }
 
 
