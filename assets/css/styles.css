@@ -1469,7 +1469,7 @@ input[type='radio'] {
     }
 
     #about-4 .carousel-indicators [data-bs-target] {
-        background-color: var(--text-color-light-bg);
+        background-color: #00000080;
     }
 
     #about-4 .carousel-indicators {
@@ -1501,7 +1501,7 @@ input[type='radio'] {
     #about-5 .map-image {
         scale: 3;
         transform: translateX(-50%);
-        left: 138%;
+        left: 136%;
         top: 1.5rem;
     }
     
@@ -1514,11 +1514,12 @@ input[type='radio'] {
 
     #about-6 .loan-originators-background {
         position: absolute;
-        width: 100%;
+        width: 162%;
         transform: translateX(-50%);
-        left: 35%;
-        top: -200px;
-    }
+        left: 70%;
+        top: -290px;
+        scale: 1.5;
+        z-index: -1;    }
 
     #about-6 .under-logo-text{
         display: flex;
