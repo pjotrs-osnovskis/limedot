@@ -48,7 +48,7 @@ p {
 }
 
 .custom__button {
-    padding: 10px;
+    padding: 10px 20px;
     width: 50%;
     color: var(--text-color-dark-bg);
     border: 1px solid var(--text-color-dark-bg);
@@ -56,6 +56,8 @@ p {
     text-transform: uppercase;
     cursor: pointer;
     background: #1D1D1D 0% 0% no-repeat padding-box;
+    display: block;
+    text-align: center;
 }
 
 .custom__button:hover {
