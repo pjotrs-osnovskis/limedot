@@ -1718,6 +1718,16 @@ input[type='radio'] {
 
 @media only screen and (max-width: 576px) {
     
+    #register{
+        padding-top: 3rem;
+        padding-bottom: 0;
+    }
+
+    #register .container-lg{
+        padding-left: 0;
+        padding: 0;
+    }
+
     #register .steps-wrap {
         padding: 0;
         position: relative;
