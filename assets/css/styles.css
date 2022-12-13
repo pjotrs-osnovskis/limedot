@@ -621,7 +621,7 @@ footer {
     height: 100%;
 }
 
-.security-table .security-card{
+.security-table .security-card {
     background-color: transparent;
 }
 
@@ -631,7 +631,7 @@ footer {
 
 
 
-.security-table .security-card p{
+.security-table .security-card p {
     margin-left: 2rem;
     margin-bottom: 0;
 }
@@ -751,7 +751,7 @@ footer {
     list-style: none;
 }
 
-#register .steps-wrap h3:not(.step-number){
+#register .steps-wrap h3:not(.step-number) {
     margin: 0;
     width: max-content;
 }
@@ -765,7 +765,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     width: 50px;
     height: 50px;
     background: #fff;
@@ -834,20 +834,28 @@ input[type='radio'] {
     display: none;
 }
 
+#verify-account .accordion-button:not(.collapsed):before {
+    rotate: 180deg;
+    margin-top: -1rem;
+}
+
+#verify-account .accordion-button {
+    position: relative;
+}
+
 #verify-account .accordion-button::before {
     content: "";
     background: no-repeat url(../img/chevron-down.svg);
-    margin-right: .5rem;
-    
+
+    margin-right: 0.75rem;
     height: 15px;
-    width: 20px;
-    margin-top: 5px;
+    min-width: 13px;
 }
 
 #verify-account .accordion-item,
 #verify-account .accordion-button,
 #verify-account .cards-container,
-#verify-account .custom__card{
+#verify-account .custom__card {
     background-color: #f7f7f7 !important;
 }
 
@@ -878,6 +886,10 @@ input[type='radio'] {
     padding: 1rem;
     background-color: #fff;
     border-radius: var(--border-radius);
+}
+
+#profile table {
+    width: 100%;
 }
 
 .easy-steps {
@@ -953,31 +965,31 @@ input[type='radio'] {
 }
 
 #how-it-works-4 h3,
-#security-2 h3{
+#security-2 h3 {
     padding-left: 1.5rem;
 }
 
 #how-it-works-4 .text-container,
-.security-card{
+.security-card {
     position: relative;
 }
 
-#how-it-works-4 h3::before{
+#how-it-works-4 h3::before {
     content: "";
     border-top: 2px solid #000;
     width: 1rem;
     position: absolute;
     left: 12px;
-    top: 11px;        
+    top: 11px;
 }
 
-#security-2 h3::before{
+#security-2 h3::before {
     content: "";
     border-top: 2px solid #000;
     width: 1rem;
     position: absolute;
     left: 12px;
-    top: 26px;        
+    top: 26px;
 }
 
 .custom__no-background {
@@ -990,7 +1002,7 @@ input[type='radio'] {
 
 @media (min-width:767px) {
 
-    
+
 
     .overflowing_background {
         background: 50% url(../img/homepage-illustration-1.png);
@@ -1106,7 +1118,7 @@ input[type='radio'] {
         box-shadow: none !important;
     }
 
-    section{
+    section {
         overflow-x: clip;
     }
 
@@ -1339,19 +1351,19 @@ input[type='radio'] {
         margin-bottom: 25rem;
     }
 
-    #index-8 .custom__button{
+    #index-8 .custom__button {
         width: 100%;
     }
 
-    #index-8 .how-to-start-card{
+    #index-8 .how-to-start-card {
         border-radius: 0;
     }
-    
-    
-    #index-8 .how-to-start-card{
+
+
+    #index-8 .how-to-start-card {
         position: relative;
     }
-    
+
     #index-8 .card-container::before,
     #index-8 .card-container::after,
     #security-2 .security-card::before,
@@ -1363,17 +1375,17 @@ input[type='radio'] {
         height: 100%;
         background-color: #FAFAF9;
     }
-    
+
     #index-8 .card-container::before,
-    #security-2 .security-card::before{
+    #security-2 .security-card::before {
         left: -70px;
     }
-    
+
     #index-8 .card-container::after,
     #security-2 .security-card::after {
         right: -70px;
     }
-    
+
     .accordion-button:not(.collapsed) {
         background-color: transparent;
         box-shadow: none;
@@ -1428,7 +1440,7 @@ input[type='radio'] {
         padding: 2rem 0;
     }
 
-    .footer .logo{
+    .footer .logo {
         margin-bottom: 1rem;
     }
 
@@ -1484,19 +1496,19 @@ input[type='radio'] {
     #about-5 {
         height: 775px;
     }
-    
+
     #about-5 .map-card {
         margin-top: 17rem;
         margin-left: 0;
     }
-    
+
     #about-5 .map-image {
         scale: 3;
         transform: translateX(-50%);
         left: 136%;
         top: 1.5rem;
     }
-    
+
     #about-6 .loan-originators-container {
         position: relative;
         padding-bottom: 1rem;
@@ -1511,13 +1523,14 @@ input[type='radio'] {
         left: 70%;
         top: -290px;
         scale: 1.5;
-        z-index: -1;    }
+        z-index: -1;
+    }
 
-    #about-6 .under-logo-text{
+    #about-6 .under-logo-text {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        padding-right: 4rem; 
+        padding-right: 4rem;
     }
 
 
@@ -1534,33 +1547,34 @@ input[type='radio'] {
         padding-left: 55% !important;
     }
 
-    #about-8{
+    #about-8 {
         height: 500px;
         background-position: bottom;
         background-color: #f7f7f7;
     }
 
-    #about-8 .image-container{
+    #about-8 .image-container {
         position: relative;
     }
 
-    #about-8 .text-container{
+    #about-8 .text-container {
         margin-top: -220px;
     }
 
-    #about-8 .binocular-image{
+    #about-8 .binocular-image {
         position: absolute;
         transform: translateX(-50%);
         left: 50%;
         width: 100%;
         top: 0;
     }
+
     #about-8 p,
-    #about-8 h1{
+    #about-8 h1 {
         text-align: center;
     }
 
-    #about-8 .custom__button{
+    #about-8 .custom__button {
         display: block;
         text-align: center;
         width: 100%;
@@ -1573,7 +1587,8 @@ input[type='radio'] {
         max-width: 100%;
 
     }
-    #how-it-works-1 .custom__round-circle{
+
+    #how-it-works-1 .custom__round-circle {
         height: 80px;
         width: 80px;
         top: -70px;
@@ -1582,28 +1597,31 @@ input[type='radio'] {
     #how-it-works-1 .custom__card img {
         scale: 1;
     }
-    #how-it-works-2{
+
+    #how-it-works-2 {
         align-items: unset;
         height: 875px;
     }
-    #how-it-works-2 .paragraph{
+
+    #how-it-works-2 .paragraph {
         padding-left: 1.5rem;
         position: relative;
     }
-    #how-it-works-2 .paragraph::before{
+
+    #how-it-works-2 .paragraph::before {
         content: "";
         border-top: 2px solid #000;
         width: 1rem;
         position: absolute;
         left: 0;
-        top: 11px;        
+        top: 11px;
     }
 
-    #how-it-works-2 .image-container{
+    #how-it-works-2 .image-container {
         position: relative;
     }
 
-    #how-it-works-2 .image-2{
+    #how-it-works-2 .image-2 {
         position: absolute;
         transform: translateX(-50%);
         left: 55%;
@@ -1619,24 +1637,28 @@ input[type='radio'] {
         z-index: 1;
     }
 
-    #how-it-works-3 .custom__button{
+    #how-it-works-3 .custom__button {
         display: block;
         width: 100%;
         text-align: center;
         z-index: 2;
     }
-    #how-it-works-3 .image-container{
+
+    #how-it-works-3 .image-container {
         position: relative;
     }
-    #how-it-works-3 .image-2{
+
+    #how-it-works-3 .image-2 {
         transform: translateX(-50%);
         left: 90%;
         top: -115px;
     }
-    #how-it-works-4{
+
+    #how-it-works-4 {
         height: 1000px;
         position: relative;
     }
+
     #how-it-works-4 img {
         max-width: 100;
         position: absolute;
@@ -1648,13 +1670,13 @@ input[type='radio'] {
     }
 
 
-    #how-it-works-5 .custom__button{
+    #how-it-works-5 .custom__button {
         display: block;
         width: 100%;
         text-align: center;
     }
 
-    #security-1{
+    #security-1 {
         background-color: #fff;
     }
 
@@ -1671,7 +1693,7 @@ input[type='radio'] {
     #security-2 {
         margin-top: 7rem;
     }
-    
+
 
     #register .custom__button {
         width: 100%;
@@ -1681,7 +1703,7 @@ input[type='radio'] {
         padding: 1rem .5rem;
     }
 
-    #verify-account{
+    #verify-account {
         height: 100%;
     }
 
@@ -1689,7 +1711,7 @@ input[type='radio'] {
         width: 100%;
     }
 
-    #verify-account .container-lg{
+    #verify-account .container-lg {
         padding: 0;
     }
 
@@ -1746,17 +1768,73 @@ input[type='radio'] {
         left: 50%;
         transform: translateX(-50%);
     }
+    #profile{
+        height: 100%;
+        padding: 0;
+    }
+
+    #profile .container-lg{
+        padding: 1rem 0 0 0 ;
+    }
+
+    #profile table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    #profile table img{
+        vertical-align: baseline;
+    }
+    #profile table tr:first-child td{
+        padding: .75rem 0;
+    }
+
+    #profile table tr td {
+        display: block;
+        padding: 0 !important;
+        height: 30px;
+    }
+
+    #profile table tr td:first-child {
+        padding-top: .5rem !important;
+        padding-bottom: .25rem !important;
+
+    }
+
+    #profile table tr td:nth-child(2) {
+        font-weight: bold !important;
+        padding-bottom: .5rem !important;
+        padding-top: .25rem !important;
+
+    }
+
+    #profile .cards-container{
+        border-radius: 0;
+    }
+    #profile .cards-container .custom__card{
+        padding: 2rem 3rem;
+        margin: 0;
+    }
+    #profile .cards-container .custom__card:first-child{
+        background-color: transparent;
+    }
+
+    #profile .custom__border_bottom{
+        border-bottom: 1px solid #DDDADA;
+    }
+
 
 }
 
 @media only screen and (max-width: 576px) {
-    
-    #register{
+
+    #register {
         padding-top: 3rem;
         padding-bottom: 0;
     }
 
-    #register .container-lg{
+    #register .container-lg {
         padding-left: 0;
         padding: 0;
     }
@@ -1765,7 +1843,8 @@ input[type='radio'] {
         padding: 0;
         position: relative;
     }
-    #register .steps-wrap ul{
+
+    #register .steps-wrap ul {
         padding: 0;
         position: absolute;
         transform: translateX(-50%);
@@ -1779,23 +1858,23 @@ input[type='radio'] {
         margin-top: 4rem;
     }
 
-    #register .steps-wrap li{
+    #register .steps-wrap li {
         margin: 0 1.5rem;
         padding: 10px 10px 10px 30px;
     }
 
-    #register .steps-wrap li:last-child{
+    #register .steps-wrap li:last-child {
         margin-right: auto !important;
     }
 
 
-    #register .steps-wrap li:not(.active-step){
+    #register .steps-wrap li:not(.active-step) {
         padding: 10px 0;
         background: #f7f7f7;
         width: max-content;
     }
 
-    #register .steps-wrap li:not(.active-step).step-number{
+    #register .steps-wrap li:not(.active-step).step-number {
         border: 2px solid #f7f7f7;
         left: 50%;
         transform: translateX(-50%);
