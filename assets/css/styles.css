@@ -830,26 +830,42 @@ input[type='radio'] {
     padding: 5rem 0;
 }
 
-#verify-account .accordion-button::after {
+#verify-account .accordion-button::after,
+#index-6 .accordion-button::after {
     display: none;
 }
 
-#verify-account .accordion-button:not(.collapsed):before {
+#verify-account .accordion-button:not(.collapsed):before,
+#index-6 .accordion-button:not(.collapsed):before {
     rotate: 180deg;
     margin-top: -1rem;
 }
 
-#verify-account .accordion-button {
+#verify-account .accordion-button,
+#index-6 .accordion-button {
     position: relative;
 }
 
-#verify-account .accordion-button::before {
+#verify-account .accordion-button::before,
+#index-6 .accordion-button::before {
     content: "";
     background: no-repeat url(../img/chevron-down.svg);
 
     margin-right: 0.75rem;
     height: 15px;
     min-width: 13px;
+}
+
+#index-6 .accordion-button:not(.collapsed):before {
+    margin-top: -1.25rem;
+}
+
+#index-6 .accordion-button::before{
+    position: absolute;
+    left: 0;
+    margin-top: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #verify-account .accordion-item,
