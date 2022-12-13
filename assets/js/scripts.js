@@ -1,13 +1,9 @@
 $('#navbar-toggler').on('click', () => {
     $('.overlay').css('margin-top', $('.navbar').outerHeight())
-
     if ($('#navbar-toggler').attr('aria-expanded') == 'true') {
         $('body').addClass('fixed-position');
-        $('nav').css('background-color', '#091125')
     } else {
         $('body').removeClass('fixed-position');
-        $('nav').css('background-color', 'transparent')
-
     }
 })
 

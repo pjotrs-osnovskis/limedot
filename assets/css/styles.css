@@ -24,7 +24,8 @@ a {
 h1 {
     font: normal normal 600 35px/45px Work Sans;
     letter-spacing: 0px;
-    color: var(--text-color-light-bg);
+    color: #250E30;
+    ;
 }
 
 h3 {
@@ -447,11 +448,9 @@ footer {
     top: -90px;
 }
 
-/* #about-6{
-    background-image: url(../img/loan-originators-bg.svg);
-    background-repeat: no-repeat;
-    background-position: Min(0px, calc(100vw - 450px)) bottom;
-} */
+#about-6 a{
+    text-decoration: underline;
+}
 
 #about-6 .loan-originators-container {
     position: relative;
@@ -990,18 +989,28 @@ input[type='radio'] {
     position: relative;
 }
 
-#how-it-works-4 h3::before {
+#how-it-works-4 h3::before,
+#about-3 p::before{
     content: "";
-    border-top: 2px solid #000;
+    border-top: 2px solid #045FA0;
     width: 1rem;
     position: absolute;
     left: 12px;
     top: 11px;
 }
+#about-3 p{
+    padding-left: 2rem;
+    position: relative;
+}
+#about-3 p::before{
+    left: 0;
+    width: 1.5rem;
+}
+
 
 #security-2 h3::before {
     content: "";
-    border-top: 2px solid #000;
+    border-top: 2px solid #045FA0;
     width: 1rem;
     position: absolute;
     left: 12px;
@@ -1371,17 +1380,12 @@ input[type='radio'] {
         width: 100%;
     }
 
-    #index-8 .how-to-start-card {
-        border-radius: 0;
-    }
 
 
     #index-8 .how-to-start-card {
         position: relative;
     }
 
-    #index-8 .card-container::before,
-    #index-8 .card-container::after,
     #security-2 .security-card::before,
     #security-2 .security-card::after {
         content: "";
@@ -1392,12 +1396,10 @@ input[type='radio'] {
         background-color: #FAFAF9;
     }
 
-    #index-8 .card-container::before,
     #security-2 .security-card::before {
         left: -70px;
     }
 
-    #index-8 .card-container::after,
     #security-2 .security-card::after {
         right: -70px;
     }
@@ -1489,8 +1491,14 @@ input[type='radio'] {
     }
 
     #about-4 .carousel-indicators [data-bs-target] {
-        background-color: #00000080;
+        background-color: #250e30;
+        opacity: .25;
     }
+
+    #about-4 .carousel-indicators .active {
+        opacity: 1;
+    }
+
 
     #about-4 .carousel-indicators {
         top: 360px;
@@ -1510,20 +1518,23 @@ input[type='radio'] {
     }
 
     #about-5 {
-        height: 775px;
+        height: 100%;
     }
 
     #about-5 .map-card {
-        margin-top: 17rem;
         margin-left: 0;
+        margin-top: 17rem;
+        background: #fff;
+        border-radius: 10px;
+        padding: 1rem;
     }
 
     #about-5 .map-image {
-        scale: 3;
+        scale: 2.75;
         transform: translateX(-50%);
-        left: 136%;
-        top: 1.5rem;
-    }
+        left: 125%;
+        top: 2.5rem;
+        }
 
     #about-6 .loan-originators-container {
         position: relative;
@@ -1579,10 +1590,10 @@ input[type='radio'] {
 
     #about-8 .binocular-image {
         position: absolute;
-        transform: translateX(-50%);
+        transform: translateX(-55%);
         left: 50%;
         width: 100%;
-        top: 0;
+        top: 5px;
     }
 
     #about-8 p,
@@ -1626,7 +1637,7 @@ input[type='radio'] {
 
     #how-it-works-2 .paragraph::before {
         content: "";
-        border-top: 2px solid #000;
+        border-top: 2px solid #045FA0;
         width: 1rem;
         position: absolute;
         left: 0;
@@ -1757,10 +1768,10 @@ input[type='radio'] {
     }
 
     .login-image img {
-        width: 650px;
+        width: 600px;
         position: absolute;
         left: 50%;
-        top: 400px;
+        top: 350px;
         margin-left: -100px;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -1768,20 +1779,21 @@ input[type='radio'] {
 
     .single-section-page {
         background-color: #fff;
-        height: 50rem;
+        height: 45rem;
     }
 
     .forgot-password-image img {
         position: absolute;
-        width: 650px;
-        top: 200px;
+        width: 600px;
+        top: 175px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     .error-404 img {
-        top: 224px;
-        left: 50%;
+        top: 232px;
+        left: 62%;
+        width: 500px;
         transform: translateX(-50%);
     }
     #profile{
