@@ -830,6 +830,27 @@ input[type='radio'] {
     padding: 5rem 0;
 }
 
+#verify-account .accordion-button::after {
+    display: none;
+}
+
+#verify-account .accordion-button::before {
+    content: "";
+    background: no-repeat url(../img/chevron-down.svg);
+    margin-right: .5rem;
+    
+    height: 15px;
+    width: 20px;
+    margin-top: 5px;
+}
+
+#verify-account .accordion-item,
+#verify-account .accordion-button,
+#verify-account .cards-container,
+#verify-account .custom__card{
+    background-color: #f7f7f7 !important;
+}
+
 #verify-account .main-container,
 #profile .main-container {
     background-color: #fff;
@@ -1781,7 +1802,7 @@ input[type='radio'] {
     }
 
     #verify-account .main-container {
-        padding: 1rem 1.5rem;
+        padding: 1rem 2rem;
     }
 
 
