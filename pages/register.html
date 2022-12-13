@@ -31,7 +31,6 @@
             <li class="nav-item d-md-none ms-auto">
                 <a class="btn login-button" href="login.html">Login</a>
             </li>
-
             <button id="navbar-toggler" class="navbar-toggler custom__toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -70,9 +69,9 @@
                         </ul>
                     </li>
                 </ul>
-                <a class="custom__button d-block text-center w-100 mt-4 start-investing-button d-md-none" href="#">Start
-                    investing</a>
-
+                <a class="custom__button d-block text-center w-100 mt-4 start-investing-button d-md-none" href="#">
+                    Start investing
+                </a>
             </div>
         </div>
     </nav>
@@ -103,20 +102,21 @@
                                     <h3>E-mail</h3>
                                 </label>
                                 <input type="email" class="form-control custom__form-border" id="inputLogin1"
-                                    aria-describedby="emailHelp">
+                                    aria-describedby="emailHelp" required>
+                                <span class="span-error-message">This email is taken, please choose different email, or <a href="login.html">sign in</a>.</span>
                             </div>
                             <div class="mb-3">
                                 <label for="inputphoneNumber1" class="form-label">
                                     <h3>Phone number</h3>
                                 </label>
-                                <input type="email" class="form-control custom__form-border" id="inputphoneNumber1"
-                                    aria-describedby="emailHelp">
+                                <input type="tel" class="form-control custom__form-border" id="inputphoneNumber1"
+                                    aria-describedby="emailHelp" required>
                             </div>
                             <div class="mb-3">
                                 <label for="inputPassword1" class="form-label">
                                     <h3>Password</h3>
                                 </label>
-                                <input type="password" class="form-control custom__form-border" id="inputPassword1">
+                                <input type="password" class="form-control custom__form-border" id="inputPassword1" required>
                                 <span class="span-message">Minimal password length is 6 symbols and must contain at
                                     least one number</span>
                             </div>
@@ -125,7 +125,9 @@
                                     <h3>Confirm Password</h3>
                                 </label>
                                 <input type="password" class="form-control custom__form-border"
-                                    id="inputRepeatPassword">
+                                    id="inputRepeatPassword" required>
+                                <span class="span-error-message">Passwords don't match.</span>
+
                             </div>
                             <div class="mb-3">
                                 <label for="inputPromoCode" class="form-label">
@@ -134,7 +136,7 @@
                                 <input type="text" class="form-control custom__form-border" id="inputPromoCode">
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
                                 <label class="form-check-label" for="flexCheckDefault">
                                     I have read and agree to the <a href="tncs.html">Terms of Use</a> and <a
                                         href="privacy-policy.html">Privacy Policy</a>
