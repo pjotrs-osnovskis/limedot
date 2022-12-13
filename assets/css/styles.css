@@ -1660,13 +1660,25 @@ input[type='radio'] {
         padding: 1rem .5rem;
     }
 
+    #verify-account{
+        height: 100%;
+    }
+
+    #verify-account .custom__button {
+        width: 100%;
+    }
+
+    #verify-account .container-lg{
+        padding: 0;
+    }
+
     #verify-account .cards-container,
     #profile .cards-container {
         padding: 0;
     }
 
     #verify-account .main-container {
-        padding: 1rem;
+        padding: 1rem 3rem;
     }
 
     .overlay {
@@ -1737,7 +1749,7 @@ input[type='radio'] {
         position: absolute;
         transform: translateX(-50%);
         left: 50%;
-        width: 80vw;
+        /* width: 80vw; */
 
     }
 
@@ -1767,6 +1779,11 @@ input[type='radio'] {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    #verify-account .main-container {
+        padding: 1rem 1.5rem;
+    }
+
 
 }
 
