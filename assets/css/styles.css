@@ -733,60 +733,39 @@ footer {
 }
 
 #register .steps-wrap ul {
-    text-align: center;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #register .steps-wrap li {
     text-align: left;
     position: relative;
-    font: normal normal normal 16px/19px Work Sans;
+    font: normal normal normal 16px/24px Work Sans;
     letter-spacing: 0px;
     color: #767676;
     padding: 10px 20px 10px 30px;
-    width: 265px;
-    margin: .5rem 0;
+    width: 200px;
+    margin: 0 2rem;
     background-color: #fff;
     border-radius: var(--border-radius);
-    margin-left: 25px;
-    align-self: center;
+    list-style: none;
 }
 
-#register .steps-wrap li:first-child:after {
-    content: "1";
+#register .steps-wrap h3:not(.step-number){
+    margin: 0;
+    width: max-content;
 }
 
-#register .steps-wrap li:nth-child(2):after {
-    content: "2";
-}
-
-#register .steps-wrap li:nth-child(3):after {
-    content: "3";
-}
-
-#register .steps-wrap li:after {
+#register .steps-wrap .step-number {
     position: absolute;
-    font: normal normal 600 25px/41px Work Sans;
-    letter-spacing: 0px;
-    color: var(--main-background-color);
-    text-align: center;
+    left: -35px;
     top: 50%;
-    margin-top: -20px;
-    left: -30px;
-    width: 50px;
-    height: 50px;
-    font-weight: 400;
-}
+    transform: translateY(-50%);
 
-#register .steps-wrap li:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    margin-top: -25px;
-    left: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     width: 50px;
     height: 50px;
     background: #fff;
@@ -794,17 +773,9 @@ footer {
     border-radius: 50%;
 }
 
-.active-step {
-    font: normal normal 600 16px/26px Work Sans !important;
-    color: #1D1D1D !important;
-}
-
-.active-step:before {
+.active-step .step-number {
     background: #091125 0% 0% no-repeat padding-box !important;
     border: 5px solid #F7F7F7 !important;
-}
-
-.active-step:after {
     color: #fff !important;
 }
 
@@ -1681,10 +1652,6 @@ input[type='radio'] {
     }
     
 
-    .active-step {
-        width: 100% !important;
-    }
-
     #register .custom__button {
         width: 100%;
     }
@@ -1748,6 +1715,51 @@ input[type='radio'] {
     }
 
 }
+
+@media only screen and (max-width: 576px) {
+    
+    #register .steps-wrap {
+        padding: 0;
+        position: relative;
+    }
+    #register .steps-wrap ul{
+        padding: 0;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 80vw;
+
+    }
+
+    .register-form {
+        margin: 0;
+        margin-top: 4rem;
+    }
+
+    #register .steps-wrap li{
+        margin: 0 1.5rem;
+        padding: 10px 10px 10px 30px;
+    }
+
+    #register .steps-wrap li:last-child{
+        margin-right: auto !important;
+    }
+
+
+    #register .steps-wrap li:not(.active-step){
+        padding: 10px 0;
+        background: #f7f7f7;
+        width: max-content;
+    }
+
+    #register .steps-wrap li:not(.active-step).step-number{
+        border: 2px solid #f7f7f7;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
 
 /* ================SHOW ON SCREENS WIDER THAN 960px ================*/
 @media (min-width:960px) {
