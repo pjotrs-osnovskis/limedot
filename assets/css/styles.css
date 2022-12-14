@@ -549,7 +549,7 @@ footer {
 
 #about-8 {
     min-height: 325px;
-    background: no-repeat url(../img/sign-up-and-invest.png);
+    background: #f7f7f7 no-repeat 50% url(../img/sign-up-and-invest.png);
     display: flex;
     align-items: center;
 }
@@ -1158,6 +1158,12 @@ input[type='radio'] {
 
 @media (min-width:767px) {
 
+    .container,
+    .container-lg {
+        max-width: 1200px;
+    }
+
+
     table.responsive-table {
         width: 100%;
     }
@@ -1185,6 +1191,10 @@ input[type='radio'] {
         transform: translateX(-50%);
         bottom: 0px;
         left: 50%;
+    }
+
+    .nav-item{
+        text-align: center;
     }
 
     .lang-menu .custom__active {
@@ -1998,17 +2008,6 @@ input[type='radio'] {
 
 /* ================SHOW ON SCREENS WIDER THAN 960px ================*/
 @media (min-width:960px) {
-    /* .custom__nav-item a:hover::before{
-        content: '';
-        position: absolute;
-        background: var(--main-lime-color);
-        border-radius: 100%;
-        height: 8px;
-        width: 8px;
-        transform: translateX(-50%);
-        bottom: 0px;
-        left: 50%;
-    } */
 
     #index-7 {
         background-position: -70px;
@@ -2041,13 +2040,6 @@ input[type='radio'] {
     #index-7 {
         background-position: 60px;
     }
-
-    .container,
-    .container-lg {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
-
 
     #about-3 p {
         padding-left: 17%;
