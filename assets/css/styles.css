@@ -469,11 +469,6 @@ footer {
     top: 20px;
 }
 
-/* #about-5 .map-card{
-    /* margin-left: 50%; */
-    position: relative;
-}
-
 #about-5 .map-card::before {
     content: "";
     background: url(../img/map.svg) no-repeat;
