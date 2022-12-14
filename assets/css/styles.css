@@ -773,10 +773,10 @@ footer {
 
 .login-image img {
     position: absolute;
-    width: 900px;
-    top: -30px;
-    right: -30px;
-}
+    width: 200%;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 15%;}
 
 .custom__form-border {
     border: 2px solid var(--text-color-light-bg);
@@ -788,9 +788,10 @@ footer {
 
 .forgot-password-image img {
     position: absolute;
-    width: 755px;
-    top: -275px;
-    right: -145px;
+    width: 550px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .error-404 {
@@ -799,10 +800,11 @@ footer {
 
 .error-404 img {
     position: absolute;
-    width: 660px;
-    top: -195px;
-    left: -130px;
-}
+    width: 650px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    }
 
 .back-to-home-btn {
     display: block;
