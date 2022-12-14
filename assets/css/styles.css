@@ -322,9 +322,6 @@ p {
     overflow: hidden;
 }
 
-#index-7 {
-    overflow-y: visible;
-}
 #index-7 .background-img-container{
     position: relative;
     overflow: visible;
