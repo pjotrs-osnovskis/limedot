@@ -1032,6 +1032,10 @@ input[type='radio'] {
     background: url(../img/report-settings.svg) no-repeat;
 }
 
+#profile .custom__header-blue img{
+    height: 12px;
+}
+
 .easy-steps {
     display: flex;
 }
