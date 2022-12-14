@@ -97,6 +97,10 @@ p {
     z-index: 2;
 }
 
+.navbar-toggler-icon {
+    margin-right: -25px;
+}
+
 .custom__verical-line {
     position: relative;
     padding-left: 50px;
