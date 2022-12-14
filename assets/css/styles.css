@@ -4,7 +4,6 @@
     --text-color-dark-bg: #fff;
     --text-color-light-bg: #1D1D1D;
     --text-hover-color: #ddd;
-
     --border-radius: 10px;
 }
 
@@ -50,7 +49,7 @@ p {
 
 .custom__button {
     padding: 10px 20px;
-    width: 50%;
+    max-width: 265px;
     color: var(--text-color-dark-bg);
     border: 1px solid var(--text-color-dark-bg);
     border-radius: var(--border-radius);
@@ -66,6 +65,10 @@ p {
     color: var(--text-hover-color);
 }
 
+.custom__z-index-5{
+    z-index: 5 !important;
+}
+
 .custom__toggler {
     border: none;
 }
@@ -79,6 +82,7 @@ p {
     border-radius: var(--border-radius);
     border: none !important;
     opacity: 1;
+    margin: 0 1rem;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
 }
@@ -176,6 +180,30 @@ p {
     color: var(--main-lime-color);
 }
 
+.table>:not(caption)>*>* {
+    padding: 0.25rem 0.5rem;
+}
+
+.accordion-button {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.accordion-button::before {
+    position: absolute;
+    left: 8px;
+    margin-top: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #00000013;
+    box-shadow: none;
+    color: var(--text-color-light-bg);
+}
+
+
 #index-1 {
     background-color: var(--main-background-color);
     overflow: visible;
@@ -184,6 +212,20 @@ p {
     padding-top: 128px;
     padding-bottom: 130px;
 }
+
+#index-1 .row{
+    position: relative;
+}
+
+.overflowing_background {
+    background: url(../img/homepage-illustration-1.png) no-repeat;
+    width: 100%;
+    height: 910px;
+    bottom: -208px;
+    left: 50%;
+    position: absolute;
+}
+
 
 #index-1 h1 {
     font: normal normal bold 64px/70px Work Sans;
@@ -229,7 +271,6 @@ p {
     font: normal normal 600 32px/52px Work Sans;
 }
 
-
 #index-2 h1,
 #index-2 p {
     position: relative;
@@ -248,6 +289,24 @@ p {
     z-index: -1;
 }
 
+#index-2 .paragraph-container {
+    position: relative;
+}
+
+#index-2 .paragraph-container p {
+    padding-left: 2rem;
+}
+
+#index-2 .paragraph::before {
+    content: "";
+    border-top: 2px solid #000;
+    width: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 11px;
+}
+
+
 #index-4 {
     min-height: 425px;
     display: flex;
@@ -264,6 +323,26 @@ p {
     min-height: 300px;
     overflow: hidden;
 }
+
+#index-7 {
+    overflow: visible;
+}
+#index-7 .background-img-container{
+    position: relative;
+    overflow: visible;
+}
+
+#index-7 .background-img{
+    background: url(../img/start-investing.png) no-repeat;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 40%;
+    bottom: -90%;
+    width: 635px;
+    height: 600px;
+    scale: .75;
+}
+
 
 #index-8 .how-to-start-card {
     background: #F9F9F9 0% 0% no-repeat padding-box;
@@ -401,12 +480,12 @@ footer {
 
 #about-4 .custom__card h3::before {
     content: "";
-    border-top: 2px solid #045FA0;
+    border-top: 2px solid #000;
     width: 1.5rem;
     position: absolute;
     left: 0;
     top: 20px;
-    }
+}
 
 
 
@@ -828,14 +907,14 @@ input[type='radio'] {
 .span-error-message {
     font: normal normal normal 12px/24px Work Sans;
     letter-spacing: 0px;
-    color: #red;
+    color: red;
 }
 
 
 #register .custom__button {
     margin: 0 auto;
     display: block;
-    width: 50%;
+    width: 265px;
     text-align: center;
 }
 
@@ -868,7 +947,6 @@ input[type='radio'] {
 #index-6 .accordion-button::before {
     content: "";
     background: no-repeat url(../img/chevron-down.svg);
-
     margin-right: 0.75rem;
     height: 15px;
     min-width: 13px;
@@ -880,7 +958,7 @@ input[type='radio'] {
 
 #index-6 .accordion-button::before{
     position: absolute;
-    left: 0;
+    left: 8px;
     margin-top: 0.25rem;
     top: 50%;
     transform: translateY(-50%);
@@ -1011,7 +1089,7 @@ input[type='radio'] {
 #how-it-works-4 h3::before,
 #about-3 p::before{
     content: "";
-    border-top: 2px solid #045FA0;
+    border-top: 2px solid #000;
     width: 1rem;
     position: absolute;
     left: 12px;
@@ -1029,7 +1107,7 @@ input[type='radio'] {
 
 #security-2 h3::before {
     content: "";
-    border-top: 2px solid #045FA0;
+    border-top: 2px solid #000;
     width: 1rem;
     position: absolute;
     left: 12px;
@@ -1047,15 +1125,6 @@ input[type='radio'] {
 @media (min-width:767px) {
 
 
-
-    .overflowing_background {
-        background: 50% url(../img/homepage-illustration-1.png);
-        width: 807px;
-        height: 933px;
-        top: -151px;
-        right: -15%;
-        position: absolute;
-    }
 
     /* .overflowing_background {
         position: relative;
@@ -1084,13 +1153,6 @@ input[type='radio'] {
         min-height: 1.625em;
         word-wrap: break-word;
     }
-
-    #index-7 {
-        background-image: url('../img/start-investing.png');
-        background-position: -180px;
-    }
-
-
 
     .custom__active {
         color: var(--text-color-dark-bg);
@@ -1263,12 +1325,8 @@ input[type='radio'] {
 
 
     .overflowing_background {
-        background: 50% url(../img/homepage-illustration-1.png);
-        width: 807px;
-        height: 933px;
-        top: 1rem;
-        left: 45px;
-        position: absolute;
+        bottom: -386px;
+        left: 6%;
     }
 
 
@@ -1381,25 +1439,20 @@ input[type='radio'] {
         text-align: center;
     }
 
-    #index-7 {
-        background-image: url('../img/start-investing.png');
-        background-position: -180px 62px;
-    }
 
     #index-7 .custom__button {
         display: block;
-        width: 100%;
     }
 
     #index-7 .custom__section {
         margin-bottom: 25rem;
     }
 
-    #index-8 .custom__button {
-        width: 100%;
+    #index-7 .background-img {
+        left: 30%;
+        top: 38px;
+        scale: 1;
     }
-
-
 
     #index-8 .how-to-start-card {
         position: relative;
@@ -1424,7 +1477,7 @@ input[type='radio'] {
     }
 
     .accordion-button:not(.collapsed) {
-        background-color: transparent;
+        background-color: #00000013;
         box-shadow: none;
         color: var(--text-color-light-bg);
     }
@@ -1625,7 +1678,6 @@ input[type='radio'] {
     #about-8 .custom__button {
         display: block;
         text-align: center;
-        width: 100%;
     }
 
 
@@ -1658,7 +1710,7 @@ input[type='radio'] {
 
     #how-it-works-2 .paragraph::before {
         content: "";
-        border-top: 2px solid #045FA0;
+        border-top: 2px solid #000;
         width: 1rem;
         position: absolute;
         left: 0;
@@ -1687,7 +1739,6 @@ input[type='radio'] {
 
     #how-it-works-3 .custom__button {
         display: block;
-        width: 100%;
         text-align: center;
         z-index: 2;
     }
@@ -1720,7 +1771,6 @@ input[type='radio'] {
 
     #how-it-works-5 .custom__button {
         display: block;
-        width: 100%;
         text-align: center;
     }
 
@@ -1743,20 +1793,12 @@ input[type='radio'] {
     }
 
 
-    #register .custom__button {
-        width: 100%;
-    }
-
     .register-wrap {
         padding: 1rem .5rem;
     }
 
     #verify-account {
         height: 100%;
-    }
-
-    #verify-account .custom__button {
-        width: 100%;
     }
 
     #verify-account .container-lg {
