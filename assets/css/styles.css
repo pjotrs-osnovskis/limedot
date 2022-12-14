@@ -184,10 +184,6 @@ p {
     color: var(--main-lime-color);
 }
 
-.table>:not(caption)>*>* {
-    padding: 0.25rem 0.5rem;
-}
-
 .accordion-button {
     position: relative;
     padding-left: 2rem;
@@ -440,7 +436,7 @@ footer {
 }
 
 #about-3 p {
-    text-align: center;
+    /* text-align: center; */
     padding: 0;
 }
 
@@ -561,8 +557,9 @@ footer {
     background: #F7F7F7 0% 0% no-repeat padding-box;
 }
 
-#about-7 .viasms-logo {
-    height: 30px;
+#loan_type div{
+    width: 100px;
+    
 }
 
 
@@ -1203,7 +1200,7 @@ input[type='radio'] {
 }
 
 @media only screen and (max-width: 767px) {
-
+    
     *:focus,
     *.focus-visible {
         box-shadow: none !important;
@@ -1362,7 +1359,7 @@ input[type='radio'] {
         padding-left: 50%;
         text-align: right;
         vertical-align: middle;
-        padding: 1rem;
+        padding: .5rem 1rem;
         font-weight: 600;
         color: #333839;
     }
@@ -1537,7 +1534,7 @@ input[type='radio'] {
     }
 
     #about-4 {
-        height: 470px;
+        height: 520px;
     }
 
     #about-4 .carousel-indicators [data-bs-target] {
@@ -1981,10 +1978,6 @@ input[type='radio'] {
         background-position: -70px;
     }
 
-    #about-3 h3 {
-        padding-left: 15%;
-        padding-right: 15%;
-    }
 
     #about-3 p {
         padding-left: 15%;
@@ -2019,10 +2012,6 @@ input[type='radio'] {
         padding-right: 10%;
     }
 
-    #about-3 h3 {
-        padding-left: 17%;
-        padding-right: 17%;
-    }
 
     #about-3 p {
         padding-left: 17%;
