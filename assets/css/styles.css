@@ -95,7 +95,7 @@ p {
 .navbar {
     padding: 45px 0;
     background-color: var(--main-background-color);
-    z-index: 2;
+    z-index: 10;
 }
 
 .navbar-toggler-icon {
@@ -1315,7 +1315,6 @@ input[type='radio'] {
     }
 
     .start-investing-button {
-        float: left;
         text-align: center;
         padding: 11px 35px;
         width: auto;
@@ -1876,6 +1875,7 @@ input[type='radio'] {
         position: fixed;
         top: 0;
         left: 0;
+        z-index: -1;
     }
 
     .fixed-position {
