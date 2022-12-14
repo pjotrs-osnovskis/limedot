@@ -1153,7 +1153,6 @@ input[type='radio'] {
 }
 
 
-
 /* ================SHOW ON SCREENS WIDER THAN 767px ================*/
 
 @media (min-width:767px) {
@@ -1201,6 +1200,11 @@ input[type='radio'] {
         color: var(--main-lime-color);
     }
 
+    #about-1 p{
+        width: 50%;
+        margin: 0 auto;
+    }
+
     #index-2 h3,
     #index-2 p {
         padding-right: 30%;
@@ -1244,11 +1248,24 @@ input[type='radio'] {
     }
 }
 
+@media only screen and (max-width: 810px) {
+
+    .custom__no-background {
+        /* background-color: transparent; */
+        background-image: linear-gradient(top, #091125, #091125 15%, transparent 15%, transparent 100%);
+        background-image: -webkit-linear-gradient(top, #091125, #091125 15%, transparent 15%, transparent 100%);
+    }
+}
+
 @media only screen and (max-width: 767px) {
     
     *:focus,
     *.focus-visible {
         box-shadow: none !important;
+    }
+
+    .custom__no-background {
+        background-color: transparent;
     }
 
     section {
@@ -1334,7 +1351,7 @@ input[type='radio'] {
     }
 
     #index-1 {
-        height: 858px;
+        height: 909px;
         position: relative;
         overflow-x: clip;
     }
@@ -1935,6 +1952,10 @@ input[type='radio'] {
     #profile .custom__border_bottom{
         border-bottom: 1px solid #DDDADA;
     }
+    .overflowing_background {
+        top: -51px;
+        left: 30%;
+    }
 
 
 }
@@ -1942,7 +1963,7 @@ input[type='radio'] {
 @media only screen and (max-width: 576px) {
 
     .overflowing_background {
-        bottom: -386px;
+        top: -51px;
         left: 6%;
     }
 
