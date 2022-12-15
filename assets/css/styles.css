@@ -1972,6 +1972,9 @@ input[type='radio'] {
         left: 30%;
     }
 
+    .start-investing-button {
+        margin-top: 2rem !important;
+    }
 
 }
 
