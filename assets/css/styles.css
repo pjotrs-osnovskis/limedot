@@ -58,7 +58,7 @@ p {
     padding: 10px 20px;
     max-width: 286px;
     color: var(--text-color-dark-bg);
-    border: 1px solid var(--text-color-dark-bg);
+    border: 1px solid transparent;
     border-radius: var(--border-radius);
     text-transform: uppercase;
     cursor: pointer;
