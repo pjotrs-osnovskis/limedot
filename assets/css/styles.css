@@ -50,7 +50,7 @@ p {
 
 .custom__button {
     padding: 10px 20px;
-    max-width: 265px;
+    max-width: 286px;
     color: var(--text-color-dark-bg);
     border: 1px solid var(--text-color-dark-bg);
     border-radius: var(--border-radius);
@@ -313,18 +313,6 @@ p {
     position: relative;
     overflow: visible;
 }
-
-#index-7 .background-img{
-    background: url(../img/start-investing.png) no-repeat;
-    position: absolute;
-    transform: translateX(-50%);
-    left: 40%;
-    bottom: -90%;
-    width: 635px;
-    height: 600px;
-    scale: .75;
-}
-
 
 #index-8 .how-to-start-card {
     background: #F9F9F9 0% 0% no-repeat padding-box;
@@ -1249,6 +1237,18 @@ input[type='radio'] {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
+    #index-7 .background-img{
+        background: url(../img/start-investing.png) no-repeat;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 40%;
+        bottom: -90%;
+        width: 635px;
+        height: 600px;
+        scale: .75;
+    }
+    
 }
 
 @media only screen and (max-width: 810px) {
@@ -1484,14 +1484,33 @@ input[type='radio'] {
     }
 
     #index-7 .custom__section {
-        margin-bottom: 25rem;
+        margin-bottom: 18rem;
     }
 
-    #index-7 .background-img {
-        left: 30%;
-        top: 38px;
+
+    #index-7 .background-img{
+        background: url(../img/violet-gradient.svg) no-repeat;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 40%;
+        bottom: -600px;
+        width: 635px;
+        height: 600px;
         scale: 1;
     }
+
+    #index-7 .hand-lightbulb-image{
+        background: url(../img/hands-with-lightbulb.svg) no-repeat;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 100%;
+        bottom: -806px;
+        width: 635px;
+        height: 600px;
+        scale: 1;
+    }
+
+
 
     #index-8 .how-to-start-card {
         position: relative;
