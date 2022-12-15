@@ -663,9 +663,8 @@ footer {
 
 .security-image-container img {
     position: absolute;
-    max-width: 1000px;
-    transform: translate(-50%, -30%);
-    left: 50%;
+    max-width: 850px;
+    transform: translate(-50%, -23%);    left: 50%;
 }
 
 #security-2 {
@@ -1119,7 +1118,7 @@ input[type='radio'] {
     top: 11px;
 }
 #about-3 p{
-    padding-left: 2rem;
+    padding-left: 2rem !important;
     position: relative;
 }
 #about-3 p::before{
