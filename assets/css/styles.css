@@ -56,9 +56,8 @@ p {
 
 .custom__button {
     padding: 10px 20px;
-    max-width: 286px;
+    width: 286px;
     color: var(--text-color-dark-bg);
-    border: 1px solid transparent;
     border-radius: var(--border-radius);
     text-transform: uppercase;
     cursor: pointer;
@@ -606,8 +605,9 @@ footer {
 
 .custom__big-number{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    padding: 0;
 }
 
 .custom__big-number img{
@@ -893,13 +893,6 @@ input[type='radio'] {
     margin-top: .5rem;
 }
 
-
-#register .custom__button {
-    margin: 0 auto;
-    display: block;
-    width: 265px;
-    text-align: center;
-}
 
 .form-label {
     margin: 0;
@@ -1482,10 +1475,6 @@ input[type='radio'] {
     }
 
 
-    #index-7 .custom__button {
-        display: block;
-    }
-
     #index-7 .custom__section {
         margin-bottom: 18rem;
     }
@@ -1557,7 +1546,7 @@ input[type='radio'] {
     .footer .accordion-button:not(.collapsed) {
         background-color: transparent;
         box-shadow: none;
-        padding: 0 1rem;
+        padding: 0;
         /* align-items: baseline */
     }
 
@@ -1749,13 +1738,9 @@ input[type='radio'] {
         text-align: center;
     }
 
-    #about-8 .custom__button {
-        display: block;
-        text-align: center;
-    }
-
 
     #how-it-works-1 .custom__card {
+        margin: 0;
         margin-top: 3rem;
         height: auto;
         max-width: 100%;
@@ -1810,12 +1795,6 @@ input[type='radio'] {
         z-index: 1;
     }
 
-    #how-it-works-3 .custom__button {
-        display: block;
-        text-align: center;
-        z-index: 2;
-    }
-
     #how-it-works-3 .image-container {
         position: relative;
     }
@@ -1846,11 +1825,6 @@ input[type='radio'] {
         top: 50%;
     }
 
-
-    #how-it-works-5 .custom__button {
-        display: block;
-        text-align: center;
-    }
 
     #security-1 {
         background-color: #fff;
@@ -2008,6 +1982,11 @@ input[type='radio'] {
         top: -51px;
         left: 6%;
     }
+
+    .custom__button {
+        width: 100%;
+    }
+
 
     .security-image-container img {
         position: absolute;
