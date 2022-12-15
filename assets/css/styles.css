@@ -1493,8 +1493,8 @@ input[type='radio'] {
     #index-7 .hand-lightbulb-image{
         background: url(../img/hands-with-lightbulb.svg) no-repeat;
         position: absolute;
-        transform: translateX(-50%);
-        left: 100%;
+        transform: translateX(-25%);
+        left: 50%;
         bottom: -806px;
         width: 635px;
         height: 600px;
