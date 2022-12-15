@@ -682,9 +682,6 @@ footer {
     background-color: transparent;
 }
 
-#security-2 .security-card {
-    border-radius: 0;
-}
 
 
 
@@ -1529,6 +1526,9 @@ input[type='radio'] {
         right: -70px;
     }
 
+    #security-2 .security-card {
+        border-radius: 0;
+    }
     
 
     .accordion-button:not(.collapsed) {
