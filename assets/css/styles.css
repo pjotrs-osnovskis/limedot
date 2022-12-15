@@ -659,12 +659,15 @@ footer {
     position: relative;
 }
 
-#security-image {
+.security-image-container {
+    position: relative;
+}
+
+.security-image-container img {
     position: absolute;
-    width: 1000px;
+    max-width: 1000px;
+    transform: translate(-50%, -30%);
     left: 50%;
-    margin-left: -500px;
-    margin-top: -230px;
 }
 
 #security-2 {
@@ -1534,6 +1537,8 @@ input[type='radio'] {
         right: -70px;
     }
 
+    
+
     .accordion-button:not(.collapsed) {
         background-color: #00000013;
         box-shadow: none;
@@ -1995,6 +2000,13 @@ input[type='radio'] {
     .overflowing_background {
         top: -51px;
         left: 6%;
+    }
+
+    .security-image-container img {
+        position: absolute;
+        max-width: 500px;
+        transform: translate(-50%, -30%);
+        left: 50%;
     }
 
 
