@@ -23,7 +23,7 @@ td {
 }
 
 a {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #000;
 }
 
@@ -66,6 +66,18 @@ p {
     text-align: center;
     margin: 0 auto;
 }
+
+a.custom__button {
+    text-decoration: none;
+}
+
+.custom__button:disabled {
+    background-color: #1d1d1dbf;
+    border-color: #1d1d1dbf;
+    cursor: default;
+}
+
+
 
 .custom__button:hover {
     color: var(--text-hover-color);
@@ -193,6 +205,10 @@ p {
     background-color: #00000013;
     box-shadow: none;
     color: var(--text-color-light-bg);
+}
+
+#taxCountryPicker{
+    display: none;
 }
 
 
