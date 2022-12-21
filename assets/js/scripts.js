@@ -6,14 +6,14 @@ $('#navbar-toggler').on('click', () => {
     }
 })
 
-    $('.disableNextButtonCheckbox').on('change', (e)=>{
-        e.preventDefault();
-        if ($('.disableNextButtonCheckbox:checked').length == $('.disableNextButtonCheckbox').length){
-            $('.nextStepButton').attr('disabled', false);
-        } else {
-            $('.nextStepButton').attr('disabled', true);
-        }
-    })
+$('.disableNextButtonCheckbox').on('change', (e)=>{
+    e.preventDefault();
+    if ($('.disableNextButtonCheckbox:checked').length == $('.disableNextButtonCheckbox').length){
+        $('.nextStepButton').attr('disabled', false);
+    } else {
+        $('.nextStepButton').attr('disabled', true);
+    }
+})
 
 $('#taxCountryCheckbox').on('change', (e)=>{
     e.preventDefault();
