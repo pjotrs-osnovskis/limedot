@@ -102,24 +102,31 @@
                                     <option value="1" selected>Salary/Pension</option>
                                     <option value="2">Savings</option>
                                     <option value="3">Capital Income</option>
-                                    <option value="4">Dividents or gains from investment</option>
-                                    <option value="5">Gift</option>
-                                    <option value="6">Inheritance</option>
-                                    <option value="6">Business Income</option>
-                                    <option value="6">Other</option>
+                                    <option value="4">Business Income</option>
                                 </select>
                             </div>
                             <div class="mb-3">
                                 <label for="inputAfterTaxIncome" class="form-label">
-                                    <h3>What is your annual after-tax household income?</h3>
+                                    <h3>What is your average monthly income?</h3>
                                 </label>
-                                <input type="number" class="form-control custom__form-border" id="inputAfterTaxIncome">
+                                <select id="inputAfterTaxIncome" name="income-after-tax"
+                                        class="form-select custom__form-border" required>
+                                    <option value="1" selected>0-5000 EUR</option>
+                                    <option value="2">5000-15000 EUR</option>
+                                    <option value="3">15000+ EUR</option>
+                                </select>
                             </div>
                             <div class="mb-3">
-                                <label for="inputAfterTaxIncome" class="form-label">
-                                    <h3>How much of your income do you plan to invest?</h3>
+                                <label for="inputPlannedInvestment" class="form-label">
+                                    <h3>Planned investment volume?</h3>
                                 </label>
-                                <input type="number" class="form-control custom__form-border" id="inputAfterTaxIncome">
+                                <select id="inputPlannedInvestment" name="planned-investment"
+                                        class="form-select custom__form-border" required>
+                                    <option value="1" selected>0-5000 EUR</option>
+                                    <option value="2">5000-15000 EUR</option>
+                                    <option value="3">15000+ EUR</option>
+                                </select>
+
                             </div>
                             <a class="custom__button my-5" href="verify-account.html">Submit</a>
                             <!-- <button type="submit" class="custom__button my-5">Submit</button> -->
