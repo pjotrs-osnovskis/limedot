@@ -18,9 +18,9 @@ $('#notPEPCheckbox').on('change', (e)=>{
 $('#taxCountryCheckbox').on('change', (e)=>{
     e.preventDefault();
     if ($('#taxCountryCheckbox').is(':checked')){
-        $('#taxCountryPicker').show();
-    } else {
         $('#taxCountryPicker').hide();
+    } else {
+        $('#taxCountryPicker').show();
     }
 
 })
