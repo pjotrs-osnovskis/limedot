@@ -172,7 +172,7 @@
                                 <label for="inputCoutryPicker" class="form-label">
                                     <h3>What is your country of tax residence?</h3>
                                 </label>
-                                <select id="inputTaxCoutryPicker" name="select-country"
+                                <select id="inputTaxCoutryPicker" name="select-tax-country"
                                     class="form-select custom__form-border" required>
                                     <option value="" selected disabled>Select Country</option>
                                     <option value="AT">Austria</option>
@@ -251,8 +251,8 @@
                                 <input type="text" class="form-control custom__form-border" id="inputPromoCode">
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-                                <label class="form-check-label" for="flexCheckDefault">
+                                <input class="form-check-input disableNextButtonCheckbox" type="checkbox" value="" id="tncsCheckbox" required>
+                                <label class="form-check-label" for="tncsCheckbox">
                                     I have read and agree to the
                                 </label>
                                 <a href="tncs.html">Terms of Use</a> and <a href="privacy-policy.html">Privacy
@@ -267,7 +267,7 @@
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="notPEPCheckbox">
+                                <input class="form-check-input disableNextButtonCheckbox" type="checkbox" value="" id="notPEPCheckbox" checked>
                                 <label class="form-check-label" for="notPEPCheckbox">
                                     I confirm that I am NOT a Politically Exposed Person
                                 </label>
